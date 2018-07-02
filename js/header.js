@@ -13,10 +13,8 @@ $(function() {
 
 	function headerToggle( target, target_pos, current_pos ) {
 		var now_pos = $(document).scrollTop();
-		if( current_pos > start_pos) {
-			if ( target_pos < now_pos) {
-				target.not(':animated').fadeIn();
-			}
+		if( target_pos < now_pos && current_pos < start_pos ) {
+			target.not(':animated').fadeIn();
 		} else {
 			target.not(':animated').fadeOut();
 		}
