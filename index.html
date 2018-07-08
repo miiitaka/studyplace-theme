@@ -320,7 +320,7 @@
         <ul id="media_slider" class="contents__media-list">
           <li class="contents__media-list-detail">
             <figure>
-              <img src="img/media_1.png" width="200" height="200" alt="">
+              <img src="img/media_1.png" alt="">
               <figcaption>
                 宮崎日日新聞００月号<br>○○コーナー掲載
               </figcaption>
@@ -328,7 +328,7 @@
           </li>
           <li class="contents__media-list-detail">
             <figure>
-              <img src="img/media_2.png" width="200" height="200" alt="">
+              <img src="img/media_2.png" alt="">
               <figcaption>
                 IT情報専門誌「○○○○」<br>「○○の人」掲載
               </figcaption>
@@ -336,7 +336,7 @@
           </li>
           <li class="contents__media-list-detail">
             <figure>
-              <img src="img/media_3.png" width="200" height="200" alt="">
+              <img src="img/media_3.png" alt="">
               <figcaption>
                 日経ビジネス「○○○○」<br>「○○キーマン」掲載
               </figcaption>
@@ -344,7 +344,7 @@
           </li>
           <li class="contents__media-list-detail">
             <figure>
-              <img src="img/media_4.png" width="200" height="200" alt="">
+              <img src="img/media_4.png" alt="">
               <figcaption>
                 教育広報○○○○００月号<br>地域創生事例集掲載
               </figcaption>
@@ -352,7 +352,7 @@
           </li>
           <li class="contents__media-list-detail">
             <figure>
-              <img src="img/media_5.png" width="200" height="200" alt="">
+              <img src="img/media_5.png" alt="">
               <figcaption>
                 朝日新聞WEB「○○○○」<br>「教育の今」特集掲載
               </figcaption>
@@ -360,7 +360,7 @@
           </li>
           <li class="contents__media-list-detail">
             <figure>
-              <img src="img/media_1.png" width="200" height="200" alt="">
+              <img src="img/media_1.png" alt="">
               <figcaption>
                 宮崎日日新聞００月号<br>○○コーナー掲載
               </figcaption>
@@ -368,7 +368,7 @@
           </li>
           <li class="contents__media-list-detail">
             <figure>
-              <img src="img/media_2.png" width="200" height="200" alt="">
+              <img src="img/media_2.png" alt="">
               <figcaption>
                 IT情報専門誌「○○○○」<br>「○○の人」掲載
               </figcaption>
@@ -376,7 +376,7 @@
           </li>
           <li class="contents__media-list-detail">
             <figure>
-              <img src="img/media_3.png" width="200" height="200" alt="">
+              <img src="img/media_3.png" alt="">
               <figcaption>
                 日経ビジネス「○○○○」<br>「○○キーマン」掲載
               </figcaption>
@@ -384,7 +384,7 @@
           </li>
           <li class="contents__media-list-detail">
             <figure>
-              <img src="img/media_4.png" width="200" height="200" alt="">
+              <img src="img/media_4.png" alt="">
               <figcaption>
                 教育広報○○○○００月号<br>地域創生事例集掲載
               </figcaption>
@@ -426,12 +426,23 @@
     </div>
   </footer>
 <script>
-$('#media_slider').bxSlider({
-	minSlides: 5,
-	maxSlides: 5,
-	slideWidth: 230
-});
-$('.contents__media .bx-prev, .contents__media .bx-next').text('');
+var ua = navigator.userAgent;
+console.log(ua);
+if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
+	var windowSize = $(window).width();
+	$('#media_slider').bxSlider({
+		minSlides: 2,
+		maxSlides: 2,
+		slideWidth: windowSize/2 - 20
+	});
+} else {
+	$('#media_slider').bxSlider({
+		minSlides: 5,
+		maxSlides: 5,
+		slideWidth: 230
+	});
+	$('.contents__media .bx-prev, .contents__media .bx-next').text('');
+}
 
 </script>
 </body>

@@ -343,11 +343,19 @@ footer,
 }
 
 .contents__media .bx-wrapper {
-
+  padding: 0;
 }
 
 .contents__media .bx-wrapper .bx-controls-direction a {
+  display: none;
+}
 
+.contents__media .bx-wrapper .bx-pager.bx-default-pager {
+  width: 100%;
+}
+
+.contents__media-list-detail img {
+	width: 90%;
 }
 
 .footer__pagetop {
