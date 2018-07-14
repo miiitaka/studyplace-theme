@@ -30,7 +30,6 @@
 	</footer>
 <script>
 var ua = navigator.userAgent;
-console.log(ua);
 if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
 	var windowSize = $(window).width();
 	$('#media_slider').bxSlider({
