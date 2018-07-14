@@ -3,14 +3,13 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ) ?>">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
-	<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 750px)">
 	<?php wp_head(); ?>
 </head>
 <body>
 	<div class="header__wrap">
 		<header class="header">
 			<h1>
-				<?php 
+				<?php
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
 					$image   = wp_get_attachment_image_src( $custom_logo_id, 'full' );
 					$format  = '<a href="'  . esc_url( home_url( '/' ) ) . '">';
