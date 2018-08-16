@@ -627,3 +627,72 @@ footer {
 .l-footer__contents small {
   color: #fff;
 }
+
+.l-contents__policy {
+  margin-bottom: 100px;
+  min-width: 1200px;
+}
+
+.contents__policy {
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 1100px;
+}
+
+.contents__policy-title span {
+  color: #00a0e9;
+  display: block;
+  font-family: "Vollkorn";
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.contents__policy-title {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #fff;
+  font-size: 50px;
+  margin:	0 auto;
+  padding: 48px 0;
+  position: relative;
+  text-align: left;
+}
+
+.contents__policy-title::after {
+  border-bottom: solid 1px #ccc;
+  bottom: 25px;
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+}
+
+.contents__policy-subtitle {
+  border-bottom: 1px solid #ccc;
+  font-size: 13px;
+  font-weight: normal;
+  padding-bottom: 30px;
+}
+
+.contents__policy-list {
+  list-style: none;
+}
+
+.contents__policy-list li {
+  border-bottom: 1px solid #ccc;
+  display: block;
+  padding: 42px 0;
+}
+
+.contents__policy-list h4 {
+  display: list-item;
+  font-size: 24px;
+  font-weight: bold;
+  list-style: decimal inside;
+  margin-bottom: 20px;
+}
+
+.contents__policy-list p {
+  font-size: 13px;
+  line-height: 1.8em;
+}

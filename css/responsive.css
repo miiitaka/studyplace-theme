@@ -158,7 +158,8 @@
 	.l-contents__top,
 	.l-contents__notice,
 	.l-contents__support,
-	.l-contents__concept {
+	.l-contents__concept,
+	.l-contents__policy {
 		min-height: 625px;
 		min-width: 100%;
 		padding-bottom: 20px;
@@ -183,7 +184,8 @@
 	.contents__top,
 	.contents__notice,
 	.contents__support,
-	.contents__concept {
+	.contents__concept,
+	.contents__policy {
 		width: 95%;
 	}
 
@@ -197,7 +199,8 @@
 	.contents__support-title span,
 	.contents__concept-title span,
 	.contents__news-title span,
-	.contents__media-title span {
+	.contents__media-title span,
+	.contents__policy-title span {
 		font-size: 14px;
 		margin-bottom: .6em;
 	}
@@ -210,6 +213,10 @@
 	.contents__media-title {
 		font-size: 24px;
 		margin-bottom: .7em;
+	}
+
+	.contents__policy-title {
+		font-size: 24px;
 	}
 
 	.contents__news-title {
@@ -408,5 +415,9 @@
 
 	.l-footer__contents small {
 		font-size: 12px;
+	}
+
+	.contents__policy-list h4 {
+		font-size: 16px;
 	}
 }
