@@ -710,3 +710,166 @@ footer {
 	font-size: 13px;
 	line-height: 1.8em;
 }
+
+.l-contents__service {
+	background: url("img/bg_service_img.png") no-repeat center top;
+	background-size: cover;
+	min-height: 768px;
+	min-width: 1200px;
+}
+
+.contents__service {
+	padding-top: 540px;
+	margin: 0 auto;
+	width: 1100px;
+}
+
+.contents__service-title span {
+	color: #00a0e9;
+	display: block;
+	font-family: "Vollkorn";
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.contents__service-title {
+	color: #fff;
+	font-size: 50px;
+	margin:	0 auto;
+	padding: 48px 0;
+	position: relative;
+	text-align: left;
+}
+
+.contents__service-title::after {
+	border-bottom: solid 2px #ccc;
+	bottom: 25px;
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 50px;
+}
+
+.contents__service-subtitle {
+	color: #fff;
+	font-size: 13px;
+	font-weight: normal;
+	padding-bottom: 30px;
+}
+
+.l-contents__service-detail {
+	margin-bottom: 100px;
+	min-height: 768px;
+	min-width: 1200px;
+}
+
+.contents__service-detail,
+.contents__service-price {
+	margin: 0 auto;
+	padding: 80px 0 0;
+	position: relative;
+	width: 1100px;
+}
+
+.contents__service-detail-title,
+.contents__service-price-title {
+	font-size: 30px;
+}
+
+.contents__service-detail-title::before,
+.contents__service-price-title::before {
+	border-top: solid 2px #00a0e9;
+	top: 50px;
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 50px;
+}
+
+.contents__service-list,
+.contents__service-price-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.contents__service-list li {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	position: relative;
+}
+
+.contents__service-list li:not(:last-child)::after {
+	border-top: solid 1px #cccccc;
+	bottom: -20px;
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 200px;
+}
+
+.contents__service-list li figure {
+	width: 200px;
+}
+
+.contents__service-list-detail {
+	margin-top: 40px;
+	width: 870px;
+}
+
+.contents__service-list-detail h3 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.contents__service-list-detail h3 span {
+	color: #00a0e9;
+	display: block;
+	font-family: "Vollkorn";
+	font-size: 13px;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.contents__service-list-detail p {
+	font-size: 13px;
+	line-height: 1.8em;
+}
+
+.contents__service-price-list {
+	margin-top: 40px
+}
+
+.contents__service-price-list li {
+	border-top: solid 1px #ddd;
+	box-sizing: border-box;
+	font-size: 13px;
+	padding: 28px 20px;
+}
+
+.contents__service-price-list li:last-child {
+	border-bottom: solid 1px #ddd;
+}
+
+.contents__service-price-list li:nth-child(odd) {
+	background-color: #fdfbf9;
+}
+
+.contents__service-price-list-name {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	width: 230px;
+}
+
+.contents__service-price-list-price {
+	color: #00a0e9;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 32px;
+}
+
+.contents__service-price-list-br {
+	display: none;
+}

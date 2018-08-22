@@ -420,4 +420,99 @@
 	.contents__policy-list h4 {
 		font-size: 16px;
 	}
+
+	.l-contents__service {
+		min-height: 500px;
+		min-width: 100%;
+	}
+
+	.contents__service {
+		padding-top: 300px;
+		width: 95%;
+	}
+
+	.contents__service-title span {
+		font-size: 14px;
+		margin-bottom: .6em;
+	}
+
+	.contents__service-title {
+		font-size: 24px;
+	}
+
+	.contents__service-subtitle {
+		font-size: 12px;
+	}
+
+	.l-contents__service-detail {
+		min-height: 625px;
+		min-width: 100%;
+	}
+
+	.contents__service-detail,
+	.contents__service-price {
+		width: 95%;
+	}
+
+	.contents__service-detail-title,
+	.contents__service-price-title {
+		font-size: 20px;
+	}
+
+	.contents__service-list li {
+		display: block;
+		margin-top: 3em;
+	}
+
+	.contents__service-list li:not(:last-child)::after {
+		bottom: -1.5em;
+		width: 50px;
+	}
+
+	.contents__service-list li figure {
+		float: right;
+		width: 30%;
+	}
+
+	.contents__service-list li figure img {
+		height: 100%;
+		width: 100%
+	}
+
+	.contents__service-list-detail {
+		width: 100%;
+	}
+
+	.contents__service-list-detail h3 {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+
+	.contents__service-list-detail h3 span {
+		font-size: 12px;
+	}
+
+	.contents__service-list-detail p {
+		line-height: 1.6em;
+	}
+
+	.contents__service-price-list li {
+		line-height: 1.4em;
+		padding: 1.2em 1em;
+	}
+
+	.contents__service-price-list-name {
+		font-size: 1.1em;
+		margin-bottom: 1em;
+		width: 180px;
+	}
+
+	.contents__service-price-list-price {
+		font-size: 1.1em;
+		margin-right: 0;
+	}
+
+	.contents__service-price-list-br {
+		display: block;
+	}
 }
