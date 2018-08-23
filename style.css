@@ -873,3 +873,148 @@ footer {
 .contents__service-price-list-br {
 	display: none;
 }
+
+.l-contents__about {
+	background: url("img/bg_about_img.png") no-repeat center top;
+	background-size: cover;
+	min-height: 768px;
+	min-width: 1200px;
+}
+
+.contents__about {
+	padding-top: 540px;
+	margin: 0 auto;
+	width: 1100px;
+}
+
+.contents__about-title span {
+	color: #00a0e9;
+	display: block;
+	font-family: "Vollkorn";
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.contents__about-title {
+	color: #fff;
+	font-size: 50px;
+	margin:	0 auto;
+	padding: 48px 0;
+	position: relative;
+	text-align: left;
+}
+
+.contents__about-title::after {
+	border-bottom: solid 2px #ccc;
+	bottom: 25px;
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 50px;
+}
+
+.contents__about-subtitle {
+	color: #fff;
+	font-size: 13px;
+	font-weight: normal;
+	padding-bottom: 30px;
+}
+
+.l-contents__about-detail {
+	margin-bottom: 100px;
+	min-height: 768px;
+	min-width: 1200px;
+}
+
+.contents__about-detail,
+.contents__about-access {
+	margin: 0 auto;
+	padding: 80px 0;
+	position: relative;
+	width: 1100px;
+}
+
+.contents__about-detail-title,
+.contents__about-access-title {
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+
+.contents__about-detail-title::before,
+.contents__about-access-title::before {
+	border-top: solid 2px #00a0e9;
+	top: 50px;
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 50px;
+}
+
+.contents__about-company-profile {
+	width: 100%;
+}
+
+.contents__about-company-profile tr {
+	border-collapse: collapse;
+	border-width: 1px 0;
+	border-color: #ddd;
+	border-style: solid;
+}
+
+.contents__about-company-profile tr:nth-child(odd) {
+	background-color: #fdfbf9;
+}
+
+.contents__about-company-profile th,
+.contents__about-company-profile td {
+	padding: 28px 20px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.contents__about-company-profile td {
+	line-height: 1.4em;
+}
+
+.contents__about-br {
+	display: none;
+}
+
+.contents__about-company-profile-address:not(:last-child)::after {
+	content: " ";
+}
+
+.contents__about-company-profile-contact:not(:last-child)::after {
+	content: " / ";
+}
+
+.contents__about-access-map {
+	margin-bottom: 40px;
+}
+
+.contents__about-access-map iframe {
+	width: 100%;
+}
+
+.contents__about-access-link {
+	border-radius: 20px;
+	border: solid 1px #000;
+	margin: 0 auto;
+	text-align: center;
+	width: 250px;
+}
+
+.contents__about-access-link a {
+	color: #000;
+	display: block;
+	font-size: 13px;
+	padding: 10px;
+}
+
+.contents__about-access-link a::after {
+	font-family: "fontawesome";
+	content: "\f35d";
+	padding-left: 30px;
+	position: absolute;
+}

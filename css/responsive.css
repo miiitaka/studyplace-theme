@@ -515,4 +515,84 @@
 	.contents__service-price-list-br {
 		display: block;
 	}
+
+	.l-contents__about {
+		min-height: 500px;
+		min-width: 100%;
+	}
+
+	.contents__about {
+		padding-top: 300px;
+		width: 95%;
+	}
+
+	.contents__about-title span {
+		font-size: 14px;
+		margin-bottom: .6em;
+	}
+
+	.contents__about-title {
+		font-size: 24px;
+	}
+
+	.contents__about-subtitle {
+		font-size: 12px;
+		line-height: 1.4em;
+	}
+
+	.l-contents__about-detail {
+		min-height: 625px;
+		min-width: 100%;
+	}
+
+	.contents__about-detail,
+	.contents__about-access {
+		padding: 4em 0 1em;
+		width: 95%;
+	}
+
+	.contents__about-detail-title,
+	.contents__about-access-title {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.contents__about-detail-title::before,
+	.contents__about-access-title::before {
+		top: 40px;
+	}
+
+	.contents__about-company-profile th,
+	.contents__about-company-profile td {
+		padding: 20px 0 20px 10px;
+	}
+
+	.contents__about-company-profile th {
+		font-size: 15px;
+		width: 100px;
+	}
+
+	.contents__about-company-profile td {
+		font-size: 13px;
+	}
+
+	.contents__about-br {
+		display: block;
+	}
+
+	.contents__about-company-profile-address {
+		display: block;
+	}
+
+	.contents__about-company-profile-address:not(:last-child)::after {
+		content: " ";
+	}
+
+	.contents__about-company-profile-contact {
+		display: block;
+	}
+
+	.contents__about-company-profile-contact:not(:last-child)::after {
+		content: "";
+	}
 }
