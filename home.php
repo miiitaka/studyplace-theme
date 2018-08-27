@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 	<main>
-		<section class="l-contents__top">
-			<div class="contents__top">
-				<h2 class="contents__top-title">
+		<section class="l-home__top">
+			<div class="home__top">
+				<h2 class="home__top-title">
 					<span>Message for you.</span>
 					プログラミングが<br>キミを主人公にする
 				</h2>
 
-				<div class="contents__top-detail">
+				<div class="home__top-detail">
 					<p>
 						今の学びに退屈さを感じているキミへ。
 					</p>
@@ -37,15 +37,15 @@
 			</div>
 		</section>
 
-		<section class="l-contents__notice">
-			<div class="contents__notice">
-				<section class="contents__notice-sentence">
-					<h2 class="contents__notice-title">
+		<section class="l-home__notice">
+			<div class="home__notice">
+				<section class="home__notice-sentence">
+					<h2 class="home__notice-title">
 						<span>To notice.</span>
 						創れるのはキミだけ
 					</h2>
 
-					<div class="contents__notice-detail">
+					<div class="home__notice-detail">
 						<p>
 							キミが進むためのレールも、<br>
 							活躍するための居場所も
@@ -66,7 +66,7 @@
 					</nav>
 				</section>
 
-				<section class="contents__notice-image-collection-first">
+				<section class="home__notice-image-collection-first">
 					<figure>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/photo01.jpg" alt="">
 					</figure>
@@ -75,7 +75,7 @@
 					</figure>
 				</section>
 
-				<section class="contents__notice-image-collection-second">
+				<section class="home__notice-image-collection-second">
 					<figure>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/photo03.jpg" alt="">
 					</figure>
@@ -86,13 +86,13 @@
 			</div>
 		</section>
 
-		<section class="l-contents__support">
-			<div class="contents__support">
-				<h2 class="contents__support-title">
+		<section class="l-home__support">
+			<div class="home__support">
+				<h2 class="home__support-title">
 					<span>I`ll support you.</span>
 					自分にとっての“本物”を追い求めるキミへ
 				</h2>
-				<div class="contents__support-detail">
+				<div class="home__support-detail">
 					<p>
 						「周りがやっているから」「あの人に勧められたから」<br>
 						そんなふうに人に流されず、<br>
@@ -110,20 +110,20 @@
 			</div>
 		</section>
 
-		<section class="l-contents__concept">
-			<div class="contents__concept">
-				<h2 class="contents__concept-title">
+		<section class="l-home__concept">
+			<div class="home__concept">
+				<h2 class="home__concept-title">
 					<span>Concept</span>
 					COMPANY SPIRITS
 				</h2>
-				<div class="contents__concept-detail">
+				<div class="home__concept-detail">
 					<h3 class="">MISSION - 情熱を傾け、目指すもの</h3>
-					<p>“いつ使うかわからない技術”よりも<br class="contents__concept-detail-br">“今すぐ使える技術”を</p>
+					<p>“いつ使うかわからない技術”よりも<br class="home__concept-detail-br">“今すぐ使える技術”を</p>
 				</div>
-				<div class="contents__concept-detail">
+				<div class="home__concept-detail">
 					<h3 class="">VISION - 私たちの行動方針</h3>
 					<p>
-						未来を生きる若者たちのために<br class="contents__concept-detail-br">10年先の技術・能力を予見する<br>
+						未来を生きる若者たちのために<br class="home__concept-detail-br">10年先の技術・能力を予見する<br>
 						究極のIT教育ベンチャーであり続ける
 					</p>
 				</div>
@@ -134,26 +134,26 @@
 			</div>
 		</section>
 
-		<section class="l-contents__news">
-			<div class="contents__news-title-wrap">
-				<h2 class="contents__news-title">
+		<section class="l-home__news">
+			<div class="home__news-title-wrap">
+				<h2 class="home__news-title">
 					<span>Event & Announcement</span>
 					NEWS
 				</h2>
 			</div>
-			<div class="contents__news-detail-wrap">
-				<ul class="contents__news-list">
+			<div class="home__news-detail-wrap">
+				<ul class="home__news-list">
 					<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ) : the_post(); ?>
-							<li class="contents__news-list-detail">
+							<li class="home__news-list-detail">
 								<article>
-									<div class="contents__news-post-time">
+									<div class="home__news-post-time">
 										<time datetime="<?php the_time( 'Y-m-d' ); ?>">
 											<?php the_time( get_option( 'date_format' ) ); ?>
 										</time>
 									</div>
 									<h3><a href=""><?php the_title(); ?></a></h3>
-									<div class="contents__news-category">
+									<div class="home__news-category">
 										<?php
 											$cat   = get_the_category();
 											$count = count($cat);
@@ -175,19 +175,19 @@
 					<?php endif; ?>
 				</ul>
 			</div>
-			<div class="contents__news-article_wrap">
+			<div class="home__news-article_wrap">
 				<p> これまでのニュース記事</p>
 			</div>
 		</section>
 
-		<section class="l-contents__media">
-			<div class="contents__media">
-				<h2 class="contents__media-title">
+		<section class="l-home__media">
+			<div class="home__media">
+				<h2 class="home__media-title">
 					<span>Everyone knows</span>
 					メディア掲載実績
 				</h2>
-				<ul id="media_slider" class="contents__media-list">
-					<li class="contents__media-list-detail">
+				<ul id="media_slider" class="home__media-list">
+					<li class="home__media-list-detail">
 						<figure>
 							<img src="<?php echo get_template_directory_uri(); ?>/img/media_1.png" alt="">
 							<figcaption>
@@ -195,7 +195,7 @@
 							</figcaption>
 						</figure>
 					</li>
-					<li class="contents__media-list-detail">
+					<li class="home__media-list-detail">
 						<figure>
 							<img src="<?php echo get_template_directory_uri(); ?>/img/media_2.png" alt="">
 							<figcaption>
@@ -203,7 +203,7 @@
 							</figcaption>
 						</figure>
 					</li>
-					<li class="contents__media-list-detail">
+					<li class="home__media-list-detail">
 						<figure>
 							<img src="<?php echo get_template_directory_uri(); ?>/img/media_3.png" alt="">
 							<figcaption>
@@ -211,7 +211,7 @@
 							</figcaption>
 						</figure>
 					</li>
-					<li class="contents__media-list-detail">
+					<li class="home__media-list-detail">
 						<figure>
 							<img src="<?php echo get_template_directory_uri(); ?>/img/media_4.png" alt="">
 							<figcaption>
@@ -219,7 +219,7 @@
 							</figcaption>
 						</figure>
 					</li>
-					<li class="contents__media-list-detail">
+					<li class="home__media-list-detail">
 						<figure>
 							<img src="<?php echo get_template_directory_uri(); ?>/img/media_5.png" alt="">
 							<figcaption>
@@ -227,7 +227,7 @@
 							</figcaption>
 						</figure>
 					</li>
-					<li class="contents__media-list-detail">
+					<li class="home__media-list-detail">
 						<figure>
 							<img src="<?php echo get_template_directory_uri(); ?>/img/media_1.png" alt="">
 							<figcaption>
@@ -235,7 +235,7 @@
 							</figcaption>
 						</figure>
 					</li>
-					<li class="contents__media-list-detail">
+					<li class="home__media-list-detail">
 						<figure>
 							<img src="<?php echo get_template_directory_uri(); ?>/img/media_2.png" alt="">
 							<figcaption>
@@ -243,7 +243,7 @@
 							</figcaption>
 						</figure>
 					</li>
-					<li class="contents__media-list-detail">
+					<li class="home__media-list-detail">
 						<figure>
 							<img src="<?php echo get_template_directory_uri(); ?>/img/media_3.png" alt="">
 							<figcaption>
@@ -251,7 +251,7 @@
 							</figcaption>
 						</figure>
 					</li>
-					<li class="contents__media-list-detail">
+					<li class="home__media-list-detail">
 						<figure>
 							<img src="<?php echo get_template_directory_uri(); ?>/img/media_4.png" alt="">
 							<figcaption>
