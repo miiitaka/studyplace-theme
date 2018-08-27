@@ -139,7 +139,7 @@ body {
 }
 
 .l-home__top {
-	background: url("img/bg_top_img.png") no-repeat center top;
+	background: url("img/bg_home_top_img.png") no-repeat center top;
 	background-size: cover;
 	min-height: 768px;
 	min-width: 1200px;
@@ -195,7 +195,7 @@ body {
 }
 
 .l-home__notice {
-	background: url("img/bg_notice_img.png") no-repeat center bottom;
+	background: url("img/bg_home_notice_img.png") no-repeat center bottom;
 	background-size: cover;
 	min-height: 768px;
 	min-width: 1200px;
@@ -288,7 +288,7 @@ body {
 }
 
 .l-home__support {
-	background: url("img/bg_support_img.png") no-repeat center top;
+	background: url("img/bg_home_support_img.png") no-repeat center top;
 	background-size: cover;
 	min-height: 768px;
 	min-width: 1200px;
@@ -324,7 +324,7 @@ body {
 }
 
 .l-home__concept {
-	background: url("img/bg_concept_img.png") no-repeat center center;
+	background: url("img/bg_home_concept_img.png") no-repeat center center;
 	background-size: cover;
 	min-height: 768px;
 	min-width: 1200px;
@@ -390,7 +390,7 @@ body {
 }
 
 .home__news-title-wrap {
-	background: url("img/bg_news_img.png") no-repeat center center;
+	background: url("img/bg_home_news_img.png") no-repeat center center;
 	background-size: cover;
 	min-width: 1200px;
 	padding-top: 350px;
