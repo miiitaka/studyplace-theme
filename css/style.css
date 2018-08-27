@@ -1003,3 +1003,141 @@ footer {
   padding-left: 30px;
   position: absolute;
 }
+
+.l-contents__concept {
+  background: url("../img/bg_concept_img.png") no-repeat center top;
+  background-size: cover;
+  min-height: 768px;
+  min-width: 1200px;
+}
+
+.contents__concept {
+  padding-top: 540px;
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.contents__concept-title span {
+  color: #00a0e9;
+  display: block;
+  font-family: "Vollkorn";
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.contents__concept-title {
+  color: #fff;
+  font-size: 50px;
+  margin:	0 auto;
+  padding: 48px 0;
+  position: relative;
+  text-align: left;
+}
+
+.contents__concept-title::after {
+  border-bottom: solid 2px #ccc;
+  bottom: 25px;
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+}
+
+.contents__concept-subtitle {
+  color: #fff;
+  font-size: 13px;
+  font-weight: normal;
+  padding-bottom: 30px;
+}
+
+.l-contents__concept-detail {
+  min-width: 1200px;
+}
+
+.contents__concept-detail {
+  margin: 0 auto;
+  padding: 80px 0;
+  position: relative;
+  width: 1100px;
+}
+
+.contents__concept-detail-title {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.contents__concept-detail article {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.contents__concept-detail article:last-child {
+  margin-bottom: 0;
+}
+
+.contents__concept-detail-text {
+  width: 660px;
+}
+
+.contents__concept-detail-text.second {
+  order: 1;
+}
+
+.contents__concept-detail-text h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contents__concept-detail-text p {
+  font-size: 13px;
+  line-height: 1.4em;
+  margin-bottom: 10px;
+}
+
+.contents__concept-detail-img {
+  width: 400px;
+}
+
+.l-contents__concept-list {
+  background: url("../img/bg_concept_main_img.png") no-repeat center top;
+  background-size: cover;
+  min-height: 420px;
+  min-width: 1200px;
+}
+
+.contents__concept-list {
+  margin: 0 auto;
+  padding-top: 70px;
+  text-align: center;
+  width: 1100px;
+}
+
+.contents__concept-list-detail:not(:first-child)::before {
+  content: "|";
+  color: #00a0e9;
+  position: relative;
+  top: -30px;
+}
+
+.contents__concept-list-detail:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.contents__concept-list-detail h3 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.contents__concept-list-detail p {
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+.contents__concept-list-detail-br {
+  display: none;
+}

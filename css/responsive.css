@@ -595,4 +595,83 @@
 	.contents__about-company-profile-contact:not(:last-child)::after {
 		content: "";
 	}
+
+	.l-contents__concept,
+	.l-contents__concept-list {
+		min-height: 500px;
+		min-width: 100%;
+	}
+
+	.contents__concept,
+	.contents__concept-list {
+		padding-top: 300px;
+		width: 95%;
+	}
+
+	.contents__concept-list {
+		padding: 100px 0;
+	}
+
+	.contents__concept-title span {
+		font-size: 14px;
+		margin-bottom: .6em;
+	}
+
+	.contents__concept-title {
+		font-size: 24px;
+	}
+
+	.contents__concept-subtitle {
+		font-size: 12px;
+		line-height: 1.4em;
+	}
+
+	.l-contents__concept-detail {
+		min-height: 625px;
+		min-width: 100%;
+	}
+
+	.contents__concept-detail {
+		padding: 4em 0 1em;
+		width: 95%;
+	}
+
+	.contents__concept-detail-title {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.contents__concept-detail-title::before {
+		top: 40px;
+	}
+
+	.contents__concept-detail article {
+		display: block;
+		margin-bottom: 40px;
+		padding-bottom: 40px;
+	}
+
+	.contents__concept-detail article:not(:last-child) {
+		border-bottom: 1px solid #ccc;
+	}
+
+	.contents__concept-detail-text,
+	.contents__concept-detail-img,
+	.contents__concept-detail-img img {
+		height: 100%;
+		width: 100%;
+	}
+
+	.contents__concept-list-detail-br {
+		display: block;
+	}
+
+	.contents__concept-list-detail h3 {
+		font-size: 12px;
+	}
+
+	.contents__concept-list-detail p {
+		font-size: 16px;
+		line-height: 1.8em;
+	}
 }
