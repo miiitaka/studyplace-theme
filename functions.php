@@ -30,13 +30,14 @@ function theme_setup() {
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
 	 */
-	add_theme_support( 'html5', array(
+	$args = array(
 		'search-form',
 		'comment-form',
 		'comment-list',
 		'gallery',
 		'caption'
-	) );
+	);
+	add_theme_support( 'html5', $args );
 
 	// Support Custom logo
 	$args = array(
@@ -56,7 +57,8 @@ function theme_setup() {
 
 	// Register Nav Menu
 	register_nav_menus( array(
-		'global' => 'Global Menu'
+		'global' => 'Global Menu',
+		'footer' => 'Footer Menu'
 	) );
 
 	theme_remove_action_head();
