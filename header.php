@@ -113,17 +113,3 @@
 			</ul>
 		</nav>
 	</div>
-
-	<div class="l-site__sns">
-		<ul>
-			<li class="site__sns-facebook">
-				<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
-			</li>
-			<li class="site__sns-twitter">
-				<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
-			</li>
-			<li class="site__sns-instagram">
-				<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
-			</li>
-		</ul>
-	</div>
