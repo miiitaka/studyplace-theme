@@ -674,4 +674,123 @@
 		font-size: 16px;
 		line-height: 1.8em;
 	}
+
+	.l-contents__contact {
+		border-bottom: 1px solid #ccc;
+		min-width: 100%;
+	}
+
+	.contents__contact {
+		border: none;
+		width: 95%;
+	}
+
+	.contents__contact-title {
+		font-size: 24px;
+	}
+
+	.contents__contact-title span {
+		font-size: 14px;
+		margin-bottom: .6em;
+	}
+
+	.contents__contact-subtitle {
+		font-size: 12px;
+		line-height: 1.4;
+	}
+
+	.l-contents__contact-detail {
+		min-width: 100%;
+	}
+
+	.contents__contact-detail {
+		width: 95%;
+	}
+
+	.contents__contact-form table {
+		margin-bottom: 30px;
+	}
+
+	.contents__contact-form caption {
+		font-size: 18px;
+	}
+
+	.contents__contact-form caption span {
+		display: block;
+		line-height: 1.6;
+		margin-top: 20px;
+	}
+
+	.contents__contact-form th,
+	.contents__contact-form td {
+		display: block;
+		width: 100%;
+	}
+
+	.contents__contact-form th {
+		font-size: 18px;
+		padding: 30px 0 0;;
+	}
+
+	.contents__contact-form td {
+		font-size: 16px;
+		padding: 25px 0;
+	}
+
+	.contents__contact-form-title,
+	.contents__contact-form-name input,
+	.contents__contact-form-kana input,
+	.contents__contact-form-detail textarea {
+		width: 100%;
+	}
+
+	.contents__contact-form-pref div {
+		width: 160px;
+	}
+
+	.contents__contact-form-tel input {
+		width: 85px;
+	}
+
+	.contents__contact-form-tel input:not(:first-of-type) {
+		margin-left: 4px;
+	}
+
+	.contents__contact-form-tel input:not(:last-of-type) {
+		margin-right: 4px;
+	}
+
+	.contents__contact-form-radio input + label::before,
+	.contents__contact-form-check input + label::before {
+		height: 25px;
+		margin-right: 5px;
+		width: 25px;
+	}
+
+	.contents__contact-form-radio input:checked + label::before {
+		font-size: 11px;
+		line-height: 2.2;
+	}
+
+	.contents__contact-form-check input:checked + label::before {
+		line-height: 1.5;
+	}
+
+	.contents__contact-form-radio label:not(:last-child),
+	.contents__contact-form-check label:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	.contents__contact-form-policy {
+		margin-bottom: 30px;
+	}
+
+	.contents__contact-form-submit {
+		margin-bottom: 35px;
+	}
+
+	.contents__contact-form-submit input {
+		padding: 10px 0;
+		width: 300px;
+	}
 }
