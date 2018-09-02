@@ -1,4 +1,4 @@
-;(function(){
+;(function($){
 	$(function() {
 		var windowHeight = $(window).height();
 		$(".global_nav-hamburger").css("height", windowHeight + "px");
