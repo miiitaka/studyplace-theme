@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+
 .pc__img {
 	display: block;
 }
@@ -48,8 +50,12 @@ body {
 
 .header .global_nav ul {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	width: 580px;
+}
+
+.header .global_nav ul li {
+	margin-left: 15px;
 }
 
 .header .global_nav ul a {
@@ -171,7 +177,7 @@ body {
 	margin-bottom: 50px;
 }
 
-.home__top-detail	p {
+.home__top-detail p {
 	color: #fff;
 	font-size: 13px;
 	line-height: 1.3;
@@ -625,7 +631,7 @@ footer {
 	display: inline-flex;
 	justify-content: space-between;
 	list-style: none;
-	padding-left: none;
+	padding-left: 0;
 }
 
 .footer__contents-menu a {
