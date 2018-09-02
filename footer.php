@@ -28,26 +28,6 @@
 			<small>&copy; 2018 STUDY PLACE.me. All rights reserved.</small>
 		</div>
 	</footer>
-<script>
-var ua = navigator.userAgent;
-if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
-	var windowSize = $(window).width();
-	$('#media_slider').bxSlider({
-		useCSS: false,
-		minSlides: 2,
-		maxSlides: 2,
-		slideWidth: windowSize/2 - 20
-	});
-} else {
-	$('#media_slider').bxSlider({
-		useCSS: false,
-		minSlides: 5,
-		maxSlides: 5,
-		slideWidth: 200
-	});
-	$('.contents__media .bx-prev, .contents__media .bx-next').text('');
-}
-</script>
 <?php wp_footer(); ?>
 </body>
 </html>
