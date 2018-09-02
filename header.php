@@ -3,9 +3,16 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ) ?>">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="theme-color" content="#004c8c">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N59XL6J');</script>
+	<!-- End Google Tag Manager -->
 	<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N59XL6J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 	<div class="header__wrap">
 		<header class="header">
 			<h1>
@@ -19,13 +26,13 @@
 				?>
 			</h1>
 			<nav class="global_nav">
-				<ul>
-					<li><a href="">私たちが目指すもの</a></li>
-					<li><a href="">サービスを知る</a></li>
-					<li><a href="">会社を知る</a></li>
-					<li><a href="">SPMEDIA.me</a></li>
-					<li><a href="">ニュース</a></li>
-				</ul>
+				<?php
+				if ( has_nav_menu( 'global' ) ) {
+					wp_nav_menu( array(
+						'theme_location' => 'global'
+					) );
+				}
+				?>
 
 				<div class="global_nav-sp">
 					<figure class="global_nav-sp-close">
@@ -50,13 +57,13 @@
 		<header class="header">
 			<h1><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="STUDY PLACE.ME"></a></h1>
 			<nav class="global_nav">
-				<ul>
-					<li><a href="">私たちが目指すもの</a></li>
-					<li><a href="">サービスを知る</a></li>
-					<li><a href="">会社を知る</a></li>
-					<li><a href="">SPMEDIA.me</a></li>
-					<li><a href="">ニュース</a></li>
-				</ul>
+				<?php
+				if ( has_nav_menu( 'global' ) ) {
+					wp_nav_menu( array(
+						'theme_location' => 'global'
+					) );
+				}
+				?>
 
 				<div class="global_nav-sp">
 					<figure class="global_nav-sp-close">
@@ -80,13 +87,13 @@
 	<div class="global_nav-hamburger-wrapper">
 		<nav class="global_nav-hamburger">
 			<h2>Menu</h2>
-			<ul class="global_nav">
-				<li><a href="">私たちが目指すもの</a></li>
-				<li><a href="">サービスを知る</a></li>
-				<li><a href="">会社を知る</a></li>
-				<li><a href="">SPMEDIA.me</a></li>
-				<li><a href="">ニュース</a></li>
-			</ul>
+			<?php
+			if ( has_nav_menu( 'global' ) ) {
+				wp_nav_menu( array(
+					'theme_location' => 'global'
+				) );
+			}
+			?>
 
 			<ul class="global_site_nav">
 				<li><a href="">プライバシーポリシー</a></li>
