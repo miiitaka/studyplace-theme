@@ -22,7 +22,7 @@ a {
 	position: absolute;
 	min-width: 1200px;
 	width: 100%;
-	z-index: 100;
+	z-index: 10000;
 }
 
 .header__wrap2 {
@@ -32,7 +32,7 @@ a {
 	position: fixed;
 	min-width: 1200px;
 	width: 100%;
-	z-index: 100;
+	z-index: 10000;
 }
 
 .header {
