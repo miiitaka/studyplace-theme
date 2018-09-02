@@ -87,10 +87,9 @@ a {
 }
 
 .l-site__sns {
-	min-width: 1200px;
 	position: fixed;
-	top: 50%;
-	width: 100%;
+	right: 25px;
+	top: calc(50% - 75px);
 	z-index: 10000;
 }
 

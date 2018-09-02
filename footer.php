@@ -28,6 +28,19 @@
 			<small>&copy; 2018 STUDY PLACE.me. All rights reserved.</small>
 		</div>
 	</footer>
+	<div class="l-site__sns">
+		<ul>
+			<li class="site__sns-facebook">
+				<a href="https://www.facebook.com/www.studyplace.me/"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+			</li>
+			<li class="site__sns-twitter">
+				<a href="https://twitter.com/StudyplaceM"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+			</li>
+			<li class="site__sns-instagram">
+				<a href="www.instagram.com/studyplace.garage/"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+			</li>
+		</ul>
+	</div>
 <?php wp_footer(); ?>
 </body>
 </html>
