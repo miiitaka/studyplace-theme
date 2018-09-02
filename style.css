@@ -48,8 +48,12 @@ body {
 
 .header .global_nav ul {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	width: 580px;
+}
+
+.header .global_nav ul li {
+	margin-left: 15px;
 }
 
 .header .global_nav ul a {
@@ -625,7 +629,7 @@ footer {
 	display: inline-flex;
 	justify-content: space-between;
 	list-style: none;
-	padding-left: none;
+	padding-left: 0;
 }
 
 .footer__contents-menu a {
