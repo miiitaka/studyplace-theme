@@ -59,11 +59,11 @@ sup {
 }
 
 sup {
-	top: -0.5em;
+	top: -.5em;
 }
 
 sub {
-	bottom: -0.25em;
+	bottom: -.25em;
 }
 
 img {
@@ -167,7 +167,7 @@ fieldset {
 	border: 1px solid #d1d1d1;
 	margin: 0 0 1.75em;
 	min-width: inherit;
-	padding: 0.875em;
+	padding: .875em;
 }
 
 fieldset > :last-child {
@@ -188,10 +188,7 @@ optgroup {
 	font-weight: bold;
 }
 
-blockquote {
+h1, h2, h3, h4, h5, h6, ul, ol, dd, blockquote {
 	margin: 0;
-}
-
-dd {
-	margin: 0;
+	padding: 0;
 }
