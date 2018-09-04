@@ -122,3 +122,30 @@ function theme_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
+
+/**
+ * Set default editor.
+ *
+ * @since  1.0.0
+ * @param  string $editor
+ * @return string $editor
+ */
+function set_default_editor( $editor ) {
+	$editor = 'html';
+	return $editor;
+}
+add_filter( 'wp_default_editor', 'set_default_editor' );
+
+/**
+ * Stop rich editor (page).
+ *
+ * @param  boolean $editor
+ * @return boolean $editor
+ */
+function stop_rich_editor( $editor ) {
+	if ( 'page' === get_current_screen()->id ) {
+		$editor = false;
+	}
+	return $editor;
+}
+add_filter( 'user_can_richedit', 'stop_rich_editor' );

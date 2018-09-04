@@ -44,7 +44,7 @@
 				</div>
 
 				<div class="contact_button">
-					<a href="">
+					<a href="<?php echo esc_url( home_url( '/contact/' ) ) ?>">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/contact.png" class="pc__img" width="149" height="42" alt="お問い合わせ">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/sp_contact.png" class="sp__img" alt="お問い合わせ">
 					</a>
@@ -75,7 +75,7 @@
 				</div>
 
 				<div class="contact_button">
-					<a href="">
+					<a href="<?php echo esc_url( home_url( '/contact/' ) ) ?>">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/contact.png" class="pc__img" width="149" height="42" alt="お問い合わせ">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/sp_contact.png" class="sp__img" alt="お問い合わせ">
 					</a>
@@ -97,7 +97,7 @@
 
 			<ul class="global_site_nav">
 				<li><a href="">プライバシーポリシー</a></li>
-				<li><a href="">お問い合わせ</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/contact/' ) ) ?>">お問い合わせ</a></li>
 			</ul>
 
 			<ul class="l-site__sns">
