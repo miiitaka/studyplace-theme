@@ -122,3 +122,15 @@ function theme_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
+
+/**
+ * Set default editor.
+ *
+ * @since 1.0.0
+ *
+ */
+function set_default_editor( $editor ) {
+	$editor = 'html';
+	return $editor;
+}
+add_filter( 'wp_default_editor', 'set_default_editor' );
