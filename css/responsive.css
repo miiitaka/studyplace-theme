@@ -713,6 +713,7 @@
 
 	.contents__contact-form caption {
 		font-size: 18px;
+		line-height: 1;
 	}
 
 	.contents__contact-form caption span {
@@ -738,18 +739,17 @@
 	}
 
 	.contents__contact-form-title,
+	.contents__contact-form-company input,
 	.contents__contact-form-name input,
 	.contents__contact-form-kana input,
+	.contents__contact-form-tel input,
+	.contents__contact-form-mail input,
 	.contents__contact-form-detail textarea {
 		width: 100%;
 	}
 
 	.contents__contact-form-pref div {
 		width: 160px;
-	}
-
-	.contents__contact-form-tel input {
-		width: 85px;
 	}
 
 	.contents__contact-form-tel input:not(:first-of-type) {
@@ -760,24 +760,24 @@
 		margin-right: 4px;
 	}
 
-	.contents__contact-form-radio input + label::before,
-	.contents__contact-form-check input + label::before {
+	.contents__contact-form-radio input + span::before,
+	.contents__contact-form-check input + span::before {
 		height: 25px;
 		margin-right: 5px;
 		width: 25px;
 	}
 
-	.contents__contact-form-radio input:checked + label::before {
+	.contents__contact-form-radio input:checked + span::before {
 		font-size: 11px;
 		line-height: 2.2;
 	}
 
-	.contents__contact-form-check input:checked + label::before {
+	.contents__contact-form-check input:checked + span::before {
 		line-height: 1.5;
 	}
 
-	.contents__contact-form-radio label:not(:last-child),
-	.contents__contact-form-check label:not(:last-child) {
+	.contents__contact-form-radio span:not(:last-child),
+	.contents__contact-form-check span:not(:last-child) {
 		margin-right: 10px;
 	}
 
