@@ -1209,7 +1209,8 @@ footer {
 .contents__contact-form caption {
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 40px;
+	line-height: .6;
+  margin-bottom: 20px;
   text-align: left;
 }
 
@@ -1307,31 +1308,33 @@ label.required::after {
 }
 
 .contents__contact-form .contents__contact-form-pref,
+.contents__contact-form .contents__contact-form-company,
 .contents__contact-form .contents__contact-form-name,
 .contents__contact-form .contents__contact-form-kana,
 .contents__contact-form .contents__contact-form-tel,
-.contents__contact-form .contents__contact-form-radio,
-.contents__contact-form .contents__contact-form-check {
+.contents__contact-form .contents__contact-form-mail,
+.contents__contact-form .contents__contact-form-radio {
   border: none;
 }
 
-.contents__contact-form .contents__contact-form-pref td {
+.contents__contact-form .contents__contact-form-pref td,
+.contents__contact-form .contents__contact-form-company td {
   padding-bottom: 30px;
 }
 
 .contents__contact-form .contents__contact-form-name td,
 .contents__contact-form .contents__contact-form-kana td,
 .contents__contact-form .contents__contact-form-tel td,
+.contents__contact-form .contents__contact-form-mail td,
 .contents__contact-form .contents__contact-form-radio td {
   padding: 0 0 30px;
 }
 
-.contents__contact-form .contents__contact-form-check td {
-  padding-top: 0;
-}
-
+.contents__contact-form-company input,
 .contents__contact-form-name input,
-.contents__contact-form-kana input {
+.contents__contact-form-kana input,
+.contents__contact-form-tel input,
+.contents__contact-form-mail input {
   border: 1px solid #999;
   border-radius: 50px;
   box-sizing: border-box;
@@ -1339,31 +1342,15 @@ label.required::after {
   width: 400px;
 }
 
-.contents__contact-form-tel input {
-  border: 1px solid #999;
-  border-radius: 50px;
-  box-sizing: border-box;
-  padding: 14px 0 14px 16px;
-  width: 120px;
-}
-
-.contents__contact-form-tel input:not(:first-of-type) {
-  margin-left: 10px;
-}
-
-.contents__contact-form-tel input:not(:last-of-type) {
-  margin-right: 10px;
-}
-
 .contents__contact-form-radio input {
   display: none;
 }
 
-.contents__contact-form-radio label:not(:last-child) {
+.contents__contact-form-radio span:not(:last-child) {
   margin-right: 24px;
 }
 
-.contents__contact-form-radio input + label::before {
+.contents__contact-form-radio input + span::before {
   border: 1px solid #ccc;
   border-radius: 50px;
   box-sizing: border-box;
@@ -1375,7 +1362,7 @@ label.required::after {
   width: 30px;
 }
 
-.contents__contact-form-radio input:checked + label::before {
+.contents__contact-form-radio input:checked + span::before {
   background-color: #00a0e9;
   border: 1px solid #00a0e9;
   content: "●";
@@ -1384,15 +1371,19 @@ label.required::after {
   text-align: center;
 }
 
+.contents__contact-form-check .wpcf7-list-item {
+  margin: 0 25px 10px 0;
+}
+
 .contents__contact-form-check input {
   display: none;
 }
 
-.contents__contact-form-check label:not(:last-child) {
+.contents__contact-form-check span:not(:last-child) {
   margin-right: 24px;
 }
 
-.contents__contact-form-check input + label::before {
+.contents__contact-form-check input + span::before {
   border: 1px solid #ccc;
   border-radius: 6px;
   box-sizing: border-box;
@@ -1404,7 +1395,7 @@ label.required::after {
   width: 30px;
 }
 
-.contents__contact-form-check input:checked + label::before {
+.contents__contact-form-check input:checked + span::before {
   background-color: #00a0e9;
   border: 1px solid #00a0e9;
   content: "\f00c";
