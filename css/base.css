@@ -1544,3 +1544,128 @@ label.required::after {
 	padding-top: 100px;
 	width: 1100px;
 }
+
+.l-contents__archive,
+.l-contents__archive-list {
+	min-width: 1200px;
+}
+
+.contents__archive {
+	padding-top: 300px;
+}
+
+.contents__archive,
+.contents__archive-list {
+	margin: 0 auto;
+	width: 1100px;
+}
+
+.contents__archive-title {
+	background-color: rgba(255, 255, 255, 0.8);
+	border-bottom: 1px solid #fff;
+	font-size: 50px;
+	margin:	0 auto;
+	padding: 48px 0;
+	position: relative;
+	text-align: left;
+}
+
+.contents__archive-title::after {
+	border-bottom: solid 1px #ccc;
+	bottom: 25px;
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 50px;
+}
+
+.contents__archive-description {
+	border-bottom: 1px solid #ccc;
+	font-size: 13px;
+	font-weight: normal;
+	padding-bottom: 30px;
+}
+
+.contents__archive-list {
+	margin-bottom: 100px;
+	padding-top: 100px;
+}
+
+.contents__archive-list > ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	padding-left: 0;
+}
+
+.contents__archive-list-datail {
+	background-color: #f5f4f3;
+	height: 270px;
+	margin-bottom: 20px;
+	width: 540px;
+}
+
+.contents__archive-list-datail:hover {
+	background-color: #00a0e9;
+	color: #fff;
+}
+
+.contents__archive-list-datail article {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contents__archive-list-text {
+	order: 1;
+	padding: 20px;
+	width: 230px;
+}
+
+.contents__archive-list-text time,
+.contents__archive-list-datail-category,
+.contents__archive-list-datail-author {
+	color: #999;
+	font-size: 13px;
+}
+
+.contents__archive-list-text time {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.contents__archive-list-text h3 {
+	margin-bottom: 20px;
+}
+
+.contents__archive-list-text h3 a {
+	color: #000;
+	font-size: 18px;
+}
+
+.contents__archive-list-datail:hover time,
+.contents__archive-list-datail:hover h3 a,
+.contents__archive-list-datail:hover .contents__archive-list-datail-category,
+.contents__archive-list-datail:hover .contents__archive-list-datail-author,
+.contents__archive-list-datail:hover .post-categories a,
+.contents__archive-list-datail:hover span {
+	color: #fff;
+}
+
+.contents__archive-list-datail-category,
+.contents__archive-list-datail-author {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.contents__archive-list-datail-category .post-categories,
+.contents__archive-list-datail-author span {
+	color: #00a0e9;
+	margin-left: 8px;
+}
+
+.contents__archive-list article figure {
+	height: 270px;
+	order: 2;
+	width: 270px;
+}

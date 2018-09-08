@@ -826,4 +826,45 @@
 	.contents__contribution-title::after {
 		bottom: 15px;
 	}
+
+	.l-contents__archive,
+	.l-contents__archive-list {
+		min-width: 100%;
+	}
+
+	.contents__archive {
+		padding-top: 100px;
+	}
+
+	.contents__archive,
+	.contents__archive-list {
+		width: 95%;
+	}
+
+	.contents__archive-title {
+		font-size: 20px;
+	}
+
+	.contents__archive-list-datail {
+		height: 100%;
+		width: 100%;
+	}
+
+	.contents__archive-list article {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.contents__archive-list-text {
+		width: 100%;
+	}
+
+	.contents__archive-list-text h3 a {
+		font-size: 16px;
+	}
+
+	.contents__archive-list article figure {
+		height: 100%;
+		width: 100%;
+	}
 }
