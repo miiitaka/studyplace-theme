@@ -139,23 +139,29 @@
 			</div>
 			<div class="home__news-detail-wrap">
 				<ul class="home__news-list">
-					<?php if ( have_posts() ) : ?>
-						<?php while ( have_posts() ) : the_post(); ?>
-							<li class="home__news-list-detail">
-								<article>
-									<div class="home__news-post-time">
-										<time datetime="<?php the_time( 'Y-m-d' ); ?>">
-											<?php the_time( get_option( 'date_format' ) ); ?>
-										</time>
-									</div>
-									<h3><a href=""><?php the_title(); ?></a></h3>
-									<?php echo get_the_category_list(); ?>
-								</article>
-							</li>
-						<?php endwhile; ?>
-					<?php else: ?>
-						<li>現在お知らせはありません。</li>
-					<?php endif; ?>
+					<?php
+					$args = array(
+						'posts_per_page' => 4,
+						'category' => -10
+					);
+					$myposts = get_posts( $args );
+					foreach ( $myposts as $post ) : setup_postdata( $post );
+					?>
+					<li class="home__news-list-detail">
+						<article>
+							<div class="home__news-post-time">
+								<time datetime="<?php the_time( 'Y-m-d' ); ?>">
+									<?php the_time( get_option( 'date_format' ) ); ?>
+								</time>
+							</div>
+							<h3><a href="<?php the_permalink(); ?>"><?php esc_html( the_title() ); ?></a></h3>
+							<?php echo get_the_category_list(); ?>
+						</article>
+					</li>
+					<?php
+					endforeach;
+					wp_reset_postdata();
+					?>
 				</ul>
 			</div>
 			<div class="home__news-article_wrap">
@@ -170,78 +176,28 @@
 					メディア掲載実績
 				</h2>
 				<ul id="media_slider" class="home__media-list">
+					<?php
+					$args = array(
+						'posts_per_page' => 10,
+						'category' => 10
+					);
+					$myposts = get_posts( $args );
+					foreach ( $myposts as $post ) : setup_postdata( $post );
+					?>
 					<li class="home__media-list-detail">
 						<figure>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/media_1.png" alt="">
+							<a href="<?php the_permalink(); ?>">
+								<?php echo get_the_post_thumbnail(); ?>
+							</a>
 							<figcaption>
-								宮崎日日新聞００月号<br>○○コーナー掲載
+								<a href="<?php the_permalink(); ?>"><?php esc_html( the_title() ); ?></a>
 							</figcaption>
 						</figure>
 					</li>
-					<li class="home__media-list-detail">
-						<figure>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/media_2.png" alt="">
-							<figcaption>
-								IT情報専門誌「○○○○」<br>「○○の人」掲載
-							</figcaption>
-						</figure>
-					</li>
-					<li class="home__media-list-detail">
-						<figure>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/media_3.png" alt="">
-							<figcaption>
-								日経ビジネス「○○○○」<br>「○○キーマン」掲載
-							</figcaption>
-						</figure>
-					</li>
-					<li class="home__media-list-detail">
-						<figure>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/media_4.png" alt="">
-							<figcaption>
-								教育広報○○○○００月号<br>地域創生事例集掲載
-							</figcaption>
-						</figure>
-					</li>
-					<li class="home__media-list-detail">
-						<figure>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/media_5.png" alt="">
-							<figcaption>
-								朝日新聞WEB「○○○○」<br>「教育の今」特集掲載
-							</figcaption>
-						</figure>
-					</li>
-					<li class="home__media-list-detail">
-						<figure>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/media_1.png" alt="">
-							<figcaption>
-								宮崎日日新聞００月号<br>○○コーナー掲載
-							</figcaption>
-						</figure>
-					</li>
-					<li class="home__media-list-detail">
-						<figure>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/media_2.png" alt="">
-							<figcaption>
-								IT情報専門誌「○○○○」<br>「○○の人」掲載
-							</figcaption>
-						</figure>
-					</li>
-					<li class="home__media-list-detail">
-						<figure>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/media_3.png" alt="">
-							<figcaption>
-								日経ビジネス「○○○○」<br>「○○キーマン」掲載
-							</figcaption>
-						</figure>
-					</li>
-					<li class="home__media-list-detail">
-						<figure>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/media_4.png" alt="">
-							<figcaption>
-								教育広報○○○○００月号<br>地域創生事例集掲載
-							</figcaption>
-						</figure>
-					</li>
+					<?php
+					endforeach;
+					wp_reset_postdata();
+					?>
 				</ul>
 			</div>
 		</section>

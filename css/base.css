@@ -578,8 +578,15 @@ a {
 .bx-wrapper .home__media-list-detail img {
 	display: inline;
 }
+
 .home__media-list-detail img {
 	margin-bottom: 20px;
+}
+
+.home__media-list-detail a {
+	color: #000;
+	display: block;
+	font-size: 13px;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager {
