@@ -11,12 +11,10 @@
 					<p>
 						今の学びに退屈さを感じているキミへ。
 					</p>
-
 					<p>
 						キミの知的好奇心を満たし、<br>
 						将来を明るく照らす鍵は“プログラミング”
 					</p>
-
 					<p>
 						プログラミングの技術を身につければ、<br>
 						これまでに出会ったことのない<br>
@@ -24,7 +22,6 @@
 						プログラミングの力で世の中の不安を<br>
 						希望へと変えられるかもしれない。
 					</p>
-
 					<p>
 						さぁ、STUDY PLACEのトビラを開いて、<br>
 						主人公になるためのカギを探しに行こう。
@@ -53,7 +50,6 @@
 						<p>
 							キミが創造する未来の設計図は<br>
 							自分自身でしか知り得ない
-						</p>
 						</p>
 						<p>
 							その図面を広げられる場所＝placeを<br>
@@ -105,7 +101,7 @@
 				</div>
 
 				<nav class="button__next">
-					<a href="">サービスを知る</a>
+					<a href="<?php esc_url( home_url( '/service/' ) ) ?>">サービスを知る</a>
 				</nav>
 			</div>
 		</section>
@@ -153,20 +149,7 @@
 										</time>
 									</div>
 									<h3><a href=""><?php the_title(); ?></a></h3>
-									<div class="home__news-category">
-										<?php
-											$cat   = get_the_category();
-											$count = count($cat);
-											$text  = '';
-											for ( $i = 0; $i < $count; $i++) {
-												if ( $i > 0 ) {
-													$text .= ' ';
-												}
-												$text .= '<span>' . $cat[$i]->cat_name . '</span>';
-											}
-											echo $text;
-										?>
-									</div>
+									<?php echo get_the_category_list(); ?>
 								</article>
 							</li>
 						<?php endwhile; ?>
@@ -263,4 +246,4 @@
 			</div>
 		</section>
 	</main>
-	<?php get_footer(); ?>
+<?php get_footer(); ?>

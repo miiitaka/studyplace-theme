@@ -18,11 +18,13 @@
 			<h1>
 				<?php
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
-					$image   = wp_get_attachment_image_src( $custom_logo_id, 'full' );
-					$format  = '<a href="'  . esc_url( home_url( '/' ) ) . '">';
-					$format .= '<img src="' . $image[0] . '" alt="' . esc_attr( get_bloginfo( 'name' )) . '">';
-					$format .= '</a>';
-					echo $format;
+					if ( !$custom_logo_id ) {
+						$image   = wp_get_attachment_image_src( $custom_logo_id, 'full' );
+						$format  = '<a href="'  . esc_url( home_url( '/' ) ) . '">';
+						$format .= '<img src="' . $image[0] . '" alt="' . esc_attr( get_bloginfo( 'name' )) . '">';
+						$format .= '</a>';
+						echo $format;
+					}
 				?>
 			</h1>
 			<nav class="global_nav">
@@ -36,17 +38,17 @@
 
 				<div class="global_nav-sp">
 					<figure class="global_nav-sp-close">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/icon_hamburger.png" alt="ハンバーガーメニュー">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/icon-open-hamburger.png" alt="open menu">
 					</figure>
 					<figure class="global_nav-sp-open">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/icon_open_hamburger.png" alt="ハンバーガーメニュー">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/icon-close-hamburger.png" alt="close menu">
 					</figure>
 				</div>
 
 				<div class="contact_button">
 					<a href="<?php echo esc_url( home_url( '/contact/' ) ) ?>">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/contact.png" class="pc__img" width="149" height="42" alt="お問い合わせ">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/sp_contact.png" class="sp__img" alt="お問い合わせ">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/sp-contact.png" class="sp__img" alt="お問い合わせ">
 					</a>
 				</div>
 			</nav>
@@ -55,7 +57,7 @@
 
 	<div class="header__wrap2">
 		<header class="header">
-			<h1><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="STUDY PLACE.ME"></a></h1>
+			<h1><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="株式会社スタディプレイス.me"></a></h1>
 			<nav class="global_nav">
 				<?php
 				if ( has_nav_menu( 'global' ) ) {
@@ -67,17 +69,17 @@
 
 				<div class="global_nav-sp">
 					<figure class="global_nav-sp-close">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/icon_hamburger.png" alt="ハンバーガーメニュー">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/icon-open-hamburger.png" alt="open menu">
 					</figure>
 					<figure class="global_nav-sp-open">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/icon_open_hamburger.png" alt="ハンバーガーメニュー">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/icon-close-hamburger.png" alt="close menu">
 					</figure>
 				</div>
 
 				<div class="contact_button">
 					<a href="<?php echo esc_url( home_url( '/contact/' ) ) ?>">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/contact.png" class="pc__img" width="149" height="42" alt="お問い合わせ">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/sp_contact.png" class="sp__img" alt="お問い合わせ">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/sp-contact.png" class="sp__img" alt="お問い合わせ">
 					</a>
 				</div>
 			</nav>
@@ -96,19 +98,19 @@
 			?>
 
 			<ul class="global_site_nav">
-				<li><a href="">プライバシーポリシー</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ) ?>">プライバシーポリシー</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/contact/' ) ) ?>">お問い合わせ</a></li>
 			</ul>
 
 			<ul class="l-site__sns">
 				<li class="site__sns-facebook">
-					<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+					<a href="https://www.facebook.com/www.studyplace.me/"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
 				</li>
 				<li class="site__sns-twitter">
-					<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+					<a href="https://twitter.com/StudyplaceM"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
 				</li>
 				<li class="site__sns-instagram">
-					<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+					<a href="https://www.instagram.com/studyplace.garage/"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
 				</li>
 			</ul>
 		</nav>
