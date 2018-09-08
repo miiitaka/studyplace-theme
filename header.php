@@ -18,7 +18,7 @@
 			<h1>
 				<?php
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
-					if ( !$custom_logo_id ) {
+					if ( $custom_logo_id ) {
 						$image   = wp_get_attachment_image_src( $custom_logo_id, 'full' );
 						$format  = '<a href="'  . esc_url( home_url( '/' ) ) . '">';
 						$format .= '<img src="' . $image[0] . '" alt="' . esc_attr( get_bloginfo( 'name' )) . '">';
