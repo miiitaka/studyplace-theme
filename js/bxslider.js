@@ -13,9 +13,10 @@
 			});
 		} else {
 			$("#media_slider").bxSlider({
-				nextText: "",
 				maxSlides: 5,
 				minSlides: 5,
+				nextText: "",
+				pager: false,
 				prevText: "",
 				slideWidth: 200
 			});
