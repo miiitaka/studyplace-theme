@@ -1,13 +1,13 @@
 	<footer>
 		<div class="l-footer__pagetop">
 			<nav class="footer__pagetop" id="pagetop">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/pageTop.png" width="" height=""><br>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/page-top.png" width="23" height="28"><br>
 				Page top
 			</nav>
 		</div>
 		<div class="l-footer__contents">
 			<figure>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/footer_logo.png" width="" height="" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/footer-logo.png" width="185" height="101" alt="">
 			</figure>
 			<div class="footer__contents-menu-wrap">
 				<ul class="footer__contents-menu">
@@ -16,11 +16,6 @@
 					<li><a href="">会社を知る</a></li>
 					<li><a href="">SPMEDIA.me</a></li>
 					<li><a href="">ニュース</a></li>
-					<li><a href="">お問い合わせ</a></li>
-				</ul>
-			</div>
-			<div class="footer__contents-menu-wrap">
-				<ul class="footer__contents-menu">
 					<li><a href="">プライバシーポリシー</a></li>
 					<li><a href="">お問い合わせ</a></li>
 				</ul>
@@ -37,7 +32,7 @@
 				<a href="https://twitter.com/StudyplaceM"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
 			</li>
 			<li class="site__sns-instagram">
-				<a href="www.instagram.com/studyplace.garage/"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+				<a href="https://www.instagram.com/studyplace.garage/"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
 			</li>
 		</ul>
 	</div>

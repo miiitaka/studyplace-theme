@@ -5,4 +5,4 @@
 			the_content();
 		endif; ?>
 	</main>
-	<?php get_footer(); ?>
+<?php get_footer(); ?>
