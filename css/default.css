@@ -1,0 +1,20 @@
+.post-categories {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	list-style: none;
+	padding-left: 0;
+}
+
+.post-categories li:not(:last-child) {
+	margin-right: 10px;
+}
+
+.post-categories li a {
+	color: #00a0e9;
+	font-size: 13px;
+}
+
+.post-categories li a::before {
+	content: '#';
+}

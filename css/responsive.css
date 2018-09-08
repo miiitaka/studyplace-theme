@@ -793,4 +793,37 @@
 		padding: 10px 0;
 		width: 300px;
 	}
+
+	.l-contents__contribution,
+	.l-contents__contribution-detail {
+		min-width: 100%;
+	}
+
+	.contents__contribution {
+		padding-top: 350px;
+	}
+
+	.contents__contribution,
+	.contents__contribution-detail {
+		width: 95%;
+	}
+
+	.contents__contribution-detail {
+		padding-top: 50px;
+	}
+
+	.contents__contribution-date {
+		font-size: 13px;
+		margin-bottom: 10px;
+		width: 80px;
+	}
+
+	.contents__contribution-title {
+		font-size: 20px;
+		padding-bottom: 30px;
+	}
+
+	.contents__contribution-title::after {
+		bottom: 15px;
+	}
 }
