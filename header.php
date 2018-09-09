@@ -21,7 +21,7 @@
 					if ( $custom_logo_id ) {
 						$image   = wp_get_attachment_image_src( $custom_logo_id, 'full' );
 						$format  = '<a href="'  . esc_url( home_url( '/' ) ) . '">';
-						$format .= '<img src="' . $image[0] . '" alt="' . esc_attr( get_bloginfo( 'name' )) . '">';
+						$format .= '<img id="header_logo" src="' . $image[0] . '" alt="' . esc_attr( get_bloginfo( 'name' )) . '">';
 						$format .= '</a>';
 						echo $format;
 					}
@@ -57,7 +57,7 @@
 
 	<div class="header__wrap2">
 		<header class="header">
-			<h1><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="株式会社スタディプレイス.me"></a></h1>
+			<h1><a href="<?php echo esc_url( home_url( '/' ) ) ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="株式会社スタディプレイス.me"></a></h1>
 			<nav class="global_nav">
 				<?php
 				if ( has_nav_menu( 'global' ) ) {

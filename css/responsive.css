@@ -24,7 +24,6 @@
 	}
 
 	.header h1 {
-		margin-top: 6px;
 		width: 210px;
 	}
 
@@ -34,6 +33,7 @@
 
 	.header .global_nav {
 		justify-content: flex-end;
+		margin-top: 6px;
 		width: 120px;
 	}
 
