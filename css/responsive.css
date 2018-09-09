@@ -89,6 +89,7 @@
 		text-align: center;
 		padding-top: 90px;
 		width: 100%;
+		z-index: 100;
 	}
 
 	.global_nav-hamburger.open h2 {
@@ -100,24 +101,26 @@
 		margin-bottom: 2vh;
 	}
 
-	.global_nav-hamburger.open .global_nav {
+	.global_nav-hamburger.open .menu {
 		display: block;
 		margin-bottom: 6vh;
 		width: 100%;
 	}
 
-	.global_nav-hamburger.open .global_nav li {
+	.global_nav-hamburger.open .menu li {
 		margin-bottom: 3vh;
 	}
 
-	.global_nav-hamburger.open .global_nav a {
+	.global_nav-hamburger.open .menu a {
 		color: #fff;
 	}
 
 	.global_nav-hamburger.open .global_site_nav {
 		display: flex;
 		justify-content: center;
+		list-style: none;
 		margin-bottom: 4vh;
+		padding-left: 0;
 	}
 
 	.global_nav-hamburger.open .global_site_nav li:first-of-type::after {
@@ -128,12 +131,15 @@
 
 	.global_nav-hamburger.open .global_site_nav a {
 		color: #fff;
+		font-size: 13px;
 	}
 
 	.global_nav-hamburger.open .l-site__sns {
 		display: flex;
 		min-width: 100%;
 		justify-content: center;
+		list-style: none;
+		padding-left: 0;
 		position: relative;
 		top: 0;
 		left: 0;
