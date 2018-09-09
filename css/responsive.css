@@ -681,6 +681,35 @@
 		line-height: 1.8em;
 	}
 
+	.l-contents__policy {
+		min-width: 100%;
+	}
+
+	.contents__policy {
+		width: 95%;
+	}
+
+	.contents__policy-title {
+		font-size: 24px;
+	}
+
+	.contents__policy-title span {
+		font-size: 14px;
+		margin-bottom: .6em;
+	}
+
+	.contents__policy-subtitle {
+		font-size: 12px;
+	}
+
+	.contents__policy-list h4 {
+		margin-bottom: 12px;
+	}
+
+	.contents__policy-list p {
+		margin: 0;
+	}
+
 	.l-contents__contact {
 		border-bottom: 1px solid #ccc;
 		min-width: 100%;
