@@ -24,7 +24,6 @@
 	}
 
 	.header h1 {
-		margin-top: 6px;
 		width: 210px;
 	}
 
@@ -34,6 +33,7 @@
 
 	.header .global_nav {
 		justify-content: flex-end;
+		margin-top: 6px;
 		width: 120px;
 	}
 
@@ -89,6 +89,7 @@
 		text-align: center;
 		padding-top: 90px;
 		width: 100%;
+		z-index: 100;
 	}
 
 	.global_nav-hamburger.open h2 {
@@ -100,24 +101,26 @@
 		margin-bottom: 2vh;
 	}
 
-	.global_nav-hamburger.open .global_nav {
+	.global_nav-hamburger.open .menu {
 		display: block;
 		margin-bottom: 6vh;
 		width: 100%;
 	}
 
-	.global_nav-hamburger.open .global_nav li {
+	.global_nav-hamburger.open .menu li {
 		margin-bottom: 3vh;
 	}
 
-	.global_nav-hamburger.open .global_nav a {
+	.global_nav-hamburger.open .menu a {
 		color: #fff;
 	}
 
 	.global_nav-hamburger.open .global_site_nav {
 		display: flex;
 		justify-content: center;
+		list-style: none;
 		margin-bottom: 4vh;
+		padding-left: 0;
 	}
 
 	.global_nav-hamburger.open .global_site_nav li:first-of-type::after {
@@ -128,12 +131,15 @@
 
 	.global_nav-hamburger.open .global_site_nav a {
 		color: #fff;
+		font-size: 13px;
 	}
 
 	.global_nav-hamburger.open .l-site__sns {
 		display: flex;
 		min-width: 100%;
 		justify-content: center;
+		list-style: none;
+		padding-left: 0;
 		position: relative;
 		top: 0;
 		left: 0;
@@ -381,6 +387,7 @@
 	}
 
 	.l-footer__contents img {
+		height: 100%;
 		margin-bottom: 3em;
 		width: 100%;
 	}
@@ -673,6 +680,35 @@
 	.contents__concept-list-detail p {
 		font-size: 16px;
 		line-height: 1.8em;
+	}
+
+	.l-contents__policy {
+		min-width: 100%;
+	}
+
+	.contents__policy {
+		width: 95%;
+	}
+
+	.contents__policy-title {
+		font-size: 24px;
+	}
+
+	.contents__policy-title span {
+		font-size: 14px;
+		margin-bottom: .6em;
+	}
+
+	.contents__policy-subtitle {
+		font-size: 12px;
+	}
+
+	.contents__policy-list h4 {
+		margin-bottom: 12px;
+	}
+
+	.contents__policy-list p {
+		margin: 0;
 	}
 
 	.l-contents__contact {
