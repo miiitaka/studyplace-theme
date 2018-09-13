@@ -12,12 +12,12 @@
 			<div class="footer__contents-menu-wrap">
 				<ul class="footer__contents-menu">
 					<li><a href="">わたしたちが目指すもの</a></li>
-					<li><a href="">サービスを知る</a></li>
-					<li><a href="">会社を知る</a></li>
-					<li><a href="">SPMEDIA.me</a></li>
-					<li><a href="">ニュース</a></li>
-					<li><a href="">プライバシーポリシー</a></li>
-					<li><a href="">お問い合わせ</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/service/' ) ) ?>">サービスを知る</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/about/' ) ) ?>">会社を知る</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/category/spmedia/' ) ) ?>">SPMEDIA.me</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/category/news/' ) ) ?>">ニュース</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ) ?>">プライバシーポリシー</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/contact/' ) ) ?>">お問い合わせ</a></li>
 				</ul>
 			</div>
 			<small>&copy; 2018 STUDY PLACE.me. All rights reserved.</small>

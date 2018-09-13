@@ -58,7 +58,7 @@
 					</div>
 
 					<nav class="button__next">
-						<a href="">SPMEDIA.me</a>
+						<a href="<?php echo esc_url( home_url( '/category/spmedia/' ) ) ?>">SPMEDIA.me</a>
 					</nav>
 				</section>
 
@@ -101,7 +101,7 @@
 				</div>
 
 				<nav class="button__next">
-					<a href="<?php esc_url( home_url( '/service/' ) ) ?>">サービスを知る</a>
+					<a href="<?php echo esc_url( home_url( '/service/' ) ) ?>">サービスを知る</a>
 				</nav>
 			</div>
 		</section>
@@ -125,7 +125,7 @@
 				</div>
 
 				<nav class="button__next">
-					<a href="">理念について</a>
+					<a href="<?php echo esc_url( home_url( '/concept/' ) ) ?>">理念について</a>
 				</nav>
 			</div>
 		</section>
