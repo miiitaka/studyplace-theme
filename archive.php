@@ -14,7 +14,7 @@
 			<div class="contents__archive-list">
 				<ul>
 					<?php while( have_posts() ) : the_post(); ?>
-					<li class="contents__archive-list-datail">
+					<li class="contents__archive-list-detail">
 						<article>
 							<figure>
 								<?php echo get_the_post_thumbnail(); ?>
@@ -24,8 +24,8 @@
 									<?php the_time( get_option( 'date_format' ) ); ?>
 								</time>
 								<h3><a href="<?php the_permalink(); ?>"><?php esc_html( the_title() ); ?></a></h3>
-								<div class="contents__archive-list-datail-category">category<?php echo get_the_category_list(); ?></div>
-								<div class="contents__archive-list-datail-author">author<span><?php echo get_the_author(); ?></span></div>
+								<div class="contents__archive-list-detail-category">category<?php echo get_the_category_list(); ?></div>
+								<div class="contents__archive-list-detail-author">author<span><?php echo get_the_author(); ?></span></div>
 							</div>
 						</article>
 					</li>

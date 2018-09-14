@@ -634,18 +634,18 @@ footer {
 	margin-bottom: 60px;
 }
 
-.footer__contents-menu {
+.footer__contents-menu-wrap ul {
 	display: inline-flex;
 	justify-content: space-between;
 	list-style: none;
 	padding-left: 0;
 }
 
-.footer__contents-menu a {
+.footer__contents-menu-wrap a {
 	color: #fff;
 }
 
-.footer__contents-menu li:not(:last-child)::after {
+.footer__contents-menu-wrap li:not(:last-child)::after {
 	content: "/";
 	color: #fff;
 	margin: 0 10px;
@@ -1603,19 +1603,19 @@ label.required::after {
 	padding-left: 0;
 }
 
-.contents__archive-list-datail {
+.contents__archive-list-detail {
 	background-color: #f5f4f3;
 	height: 270px;
 	margin-bottom: 20px;
 	width: 540px;
 }
 
-.contents__archive-list-datail:hover {
+.contents__archive-list-detail:hover {
 	background-color: #00a0e9;
 	color: #fff;
 }
 
-.contents__archive-list-datail article {
+.contents__archive-list-detail article {
 	display: flex;
 	justify-content: space-between;
 }
@@ -1627,8 +1627,8 @@ label.required::after {
 }
 
 .contents__archive-list-text time,
-.contents__archive-list-datail-category,
-.contents__archive-list-datail-author {
+.contents__archive-list-detail-category,
+.contents__archive-list-detail-author {
 	color: #999;
 	font-size: 13px;
 }
@@ -1647,23 +1647,23 @@ label.required::after {
 	font-size: 18px;
 }
 
-.contents__archive-list-datail:hover time,
-.contents__archive-list-datail:hover h3 a,
-.contents__archive-list-datail:hover .contents__archive-list-datail-category,
-.contents__archive-list-datail:hover .contents__archive-list-datail-author,
-.contents__archive-list-datail:hover .post-categories a,
-.contents__archive-list-datail:hover span {
+.contents__archive-list-detail:hover time,
+.contents__archive-list-detail:hover h3 a,
+.contents__archive-list-detail:hover .contents__archive-list-detail-category,
+.contents__archive-list-detail:hover .contents__archive-list-detail-author,
+.contents__archive-list-detail:hover .post-categories a,
+.contents__archive-list-detail:hover span {
 	color: #fff;
 }
 
-.contents__archive-list-datail-category,
-.contents__archive-list-datail-author {
+.contents__archive-list-detail-category,
+.contents__archive-list-detail-author {
 	display: flex;
 	justify-content: flex-start;
 }
 
-.contents__archive-list-datail-category .post-categories,
-.contents__archive-list-datail-author span {
+.contents__archive-list-detail-category .post-categories,
+.contents__archive-list-detail-author span {
 	color: #00a0e9;
 	margin-left: 8px;
 }
