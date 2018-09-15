@@ -18,3 +18,31 @@
 .post-categories li a::before {
 	content: '#';
 }
+
+.widget {
+	border-top: solid 1px #00a0e9;
+	padding: 0 0 30px;
+}
+
+.widget .widget-title {
+	font-size: 16px;
+	font-family: "Vollkorn";
+	font-style: italic;
+	margin: 0;
+	padding: 30px 0;
+}
+
+.widget ul {
+	font-size: 14px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.widget li {
+	margin: 0 0 10px;
+}
+
+.widget li a {
+	color: #999;
+}

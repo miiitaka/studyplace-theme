@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 	<main>
-		<?php if ( have_posts() ) :
-			the_post();
-			?>
+		<?php if ( have_posts() ) : the_post(); ?>
 			<section class="l-contents__contribution" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>)">
 				<div class="contents__contribution">
 					<?php
@@ -18,9 +16,13 @@
 				</div>
 			</section>
 			<section class="l-contents__contribution-detail">
-				<div class="contents__contribution-detail">
-					<?php the_content(); endif; ?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class( 'contents__contribution-detail' ); ?>>
+					<?php the_content(); ?>
+				</article>
+				<div class="contents__contribution-sidebar">
+					<?php get_sidebar(); ?>
 				</div>
 			</section>
+		<?php endif; ?>
 	</main>
 <?php get_footer();
