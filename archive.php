@@ -16,9 +16,6 @@
 					<?php while( have_posts() ) : the_post(); ?>
 					<li class="contents__archive-list-detail">
 						<article>
-							<figure>
-								<?php echo get_the_post_thumbnail(); ?>
-							</figure>
 							<div class="contents__archive-list-text">
 								<time datetime="<?php the_time( 'Y-m-d' ); ?>">
 									<?php the_time( get_option( 'date_format' ) ); ?>
@@ -27,6 +24,11 @@
 								<div class="contents__archive-list-detail-category">category<?php echo get_the_category_list(); ?></div>
 								<div class="contents__archive-list-detail-author">author<span><?php echo get_the_author(); ?></span></div>
 							</div>
+							<figure>
+								<a href="<?php the_permalink(); ?>">
+									<?php echo get_the_post_thumbnail(); ?>
+								</a>
+							</figure>
 						</article>
 					</li>
 					<?php endwhile; ?>

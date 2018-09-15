@@ -1706,9 +1706,17 @@ label.required::after {
 }
 
 .contents__archive-list article figure {
+	display: flex;
+	justify-content: center;
 	height: 270px;
+	overflow: hidden;
 	order: 2;
 	width: 270px;
+}
+
+.contents__archive-list article figure img {
+	height: 270px;
+	width: auto;
 }
 
 .youtube {
