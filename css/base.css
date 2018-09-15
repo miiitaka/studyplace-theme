@@ -1673,3 +1673,18 @@ label.required::after {
 	order: 2;
 	width: 270px;
 }
+
+.youtube {
+	height: 0;
+	margin: 20px 0;
+	padding-top: 75%;
+	position: relative;
+	width: 100%;
+}
+.youtube iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
