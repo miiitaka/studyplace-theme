@@ -165,7 +165,7 @@ function remove_pre_title_word( $title ) {
 	} elseif ( is_tag() ) {
 		$title = single_tag_title( '', false );
 	} elseif ( is_post_type_archive() ){
-		$title = post_type_archive_title('', false );
+		$title = post_type_archive_title( '', false );
 	}
 	return $title;
 }
