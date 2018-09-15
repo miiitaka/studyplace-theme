@@ -142,7 +142,7 @@
 					<?php
 					$args = array(
 						'posts_per_page' => 4,
-						'category' => -10
+						'category'       => -10
 					);
 					$myposts = get_posts( $args );
 					foreach ( $myposts as $post ) : setup_postdata( $post );
@@ -202,4 +202,4 @@
 			</div>
 		</section>
 	</main>
-<?php get_footer(); ?>
+<?php get_footer();

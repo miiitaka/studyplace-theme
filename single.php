@@ -8,10 +8,10 @@
 					<?php
 					$html  = '';
 					$html .= '<div class="contents__contribution-date">' . get_the_time( 'Y.m.d' ) . '</div>';
-					$html .= '<h2 class="contents__contribution-title">' . get_the_title() . '</h2>';
+					$html .= '<h2 class="contents__contribution-title">' . esc_html( get_the_title() ) . '</h2>';
 					$html .= '<div class="contents__contribution-link">';
 					$html .= '<div class="contents__contribution-link-category">category' . get_the_category_list() . '</div>';
-					$html .= '<div class="contents__contribution-link-author">author<span>' . get_the_author() . '</span></div>';
+					$html .= '<div class="contents__contribution-link-author">author<span>' . esc_html( get_the_author() ) . '</span></div>';
 					$html .= '</div>';
 					echo $html;
 					?>
@@ -19,10 +19,8 @@
 			</section>
 			<section class="l-contents__contribution-detail">
 				<div class="contents__contribution-detail">
-					<?php
-					the_content();
-					endif; ?>
+					<?php the_content(); endif; ?>
 				</div>
 			</section>
 	</main>
-	<?php get_footer(); ?>
+<?php get_footer();
