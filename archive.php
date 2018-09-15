@@ -35,10 +35,4 @@
 		</section>
 	<?php endif; ?>
 	</main>
-	<script>
-		$(function(){
-			$(".header__wrap .global_nav").addClass("black");
-			$("#header_logo").attr("src", "<?php echo get_template_directory_uri(); ?>/img/logo2.png");
-		});
-	</script>
 <?php get_footer();
