@@ -151,3 +151,22 @@ function stop_rich_editor( $editor ) {
 	return $editor;
 }
 add_filter( 'user_can_richedit', 'stop_rich_editor' );
+
+
+/**
+ * Remove title category: tag: archive:
+ *
+ * @param  string $title
+ * @return string $title
+ */
+function remove_pre_title_word( $title ) {
+	if ( is_category() ) {
+		$title = single_cat_title( '', false );
+	} elseif ( is_tag() ) {
+		$title = single_tag_title( '', false );
+	} elseif ( is_post_type_archive() ){
+		$title = post_type_archive_title('', false );
+	}
+	return $title;
+}
+add_filter( 'get_the_archive_title', 'remove_pre_title_word' );
