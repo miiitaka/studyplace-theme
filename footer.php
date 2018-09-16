@@ -10,15 +10,13 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/img/footer-logo.png" width="185" height="101" alt="">
 			</figure>
 			<div class="footer__contents-menu-wrap">
-				<ul class="footer__contents-menu">
-					<li><a href="">わたしたちが目指すもの</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/service/' ) ) ?>">サービスを知る</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/about/' ) ) ?>">会社を知る</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/category/spmedia/' ) ) ?>">SPMEDIA.me</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/category/news/' ) ) ?>">ニュース</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ) ?>">プライバシーポリシー</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/contact/' ) ) ?>">お問い合わせ</a></li>
-				</ul>
+				<?php
+				if ( has_nav_menu( 'footer' ) ) {
+					wp_nav_menu( array(
+						'theme_location' => 'footer'
+					) );
+				}
+				?>
 			</div>
 			<small>&copy; 2018 STUDY PLACE.me. All rights reserved.</small>
 		</div>

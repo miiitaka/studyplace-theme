@@ -14,19 +14,21 @@
 			<div class="contents__archive-list">
 				<ul>
 					<?php while( have_posts() ) : the_post(); ?>
-					<li class="contents__archive-list-datail">
+					<li class="contents__archive-list-detail">
 						<article>
-							<figure>
-								<?php echo get_the_post_thumbnail(); ?>
-							</figure>
 							<div class="contents__archive-list-text">
 								<time datetime="<?php the_time( 'Y-m-d' ); ?>">
 									<?php the_time( get_option( 'date_format' ) ); ?>
 								</time>
 								<h3><a href="<?php the_permalink(); ?>"><?php esc_html( the_title() ); ?></a></h3>
-								<div class="contents__archive-list-datail-category">category<?php echo get_the_category_list(); ?></div>
-								<div class="contents__archive-list-datail-author">author<span><?php echo get_the_author(); ?></span></div>
+								<div class="contents__archive-list-detail-category">category<?php echo get_the_category_list(); ?></div>
+								<div class="contents__archive-list-detail-author">author<span><?php echo get_the_author(); ?></span></div>
 							</div>
+							<figure>
+								<a href="<?php the_permalink(); ?>">
+									<?php echo get_the_post_thumbnail(); ?>
+								</a>
+							</figure>
 						</article>
 					</li>
 					<?php endwhile; ?>
@@ -35,10 +37,4 @@
 		</section>
 	<?php endif; ?>
 	</main>
-	<script>
-		$(function(){
-			$(".header__wrap .global_nav").addClass("black");
-			$("#header_logo").attr("src", "<?php echo get_template_directory_uri(); ?>/img/logo2.png");
-		});
-	</script>
-	<?php get_footer(); ?>
+<?php get_footer();

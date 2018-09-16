@@ -142,7 +142,7 @@
 					<?php
 					$args = array(
 						'posts_per_page' => 4,
-						'category' => -10
+						'category'       => -10
 					);
 					$myposts = get_posts( $args );
 					foreach ( $myposts as $post ) : setup_postdata( $post );
@@ -165,7 +165,7 @@
 				</ul>
 			</div>
 			<div class="home__news-article_wrap">
-				<p> これまでのニュース記事</p>
+				<p><a href="<?php echo esc_url( home_url( '/category/news/' ) ) ?>">これまでのニュース記事</a></p>
 			</div>
 		</section>
 
@@ -202,4 +202,4 @@
 			</div>
 		</section>
 	</main>
-<?php get_footer(); ?>
+<?php get_footer();

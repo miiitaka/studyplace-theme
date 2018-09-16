@@ -21,13 +21,22 @@
 					if ( $custom_logo_id ) {
 						$image   = wp_get_attachment_image_src( $custom_logo_id, 'full' );
 						$format  = '<a href="'  . esc_url( home_url( '/' ) ) . '">';
-						$format .= '<img id="header_logo" src="' . $image[0] . '" alt="' . esc_attr( get_bloginfo( 'name' )) . '">';
+
+						if ( is_archive() || is_page( 'privacy-policy' ) || is_page( 'contact' ) ) {
+							$format .= '<img id="header_logo" src="' . get_template_directory_uri() . '/img/logo2.png' . '" alt="' . esc_attr( get_bloginfo( 'name' ) ) . '">';
+						} else {
+							$format .= '<img id="header_logo" src="' . $image[0] . '" alt="' . esc_attr( get_bloginfo( 'name' ) ) . '">';
+						}
 						$format .= '</a>';
 						echo $format;
 					}
 				?>
 			</h1>
+			<?php if ( is_archive() || is_page( 'privacy-policy' ) || is_page( 'contact' ) ) :  ?>
+			<nav class="global_nav black">
+			<?php else : ?>
 			<nav class="global_nav">
+			<? endif; ?>
 				<?php
 				if ( has_nav_menu( 'global' ) ) {
 					wp_nav_menu( array(

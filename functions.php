@@ -101,6 +101,7 @@ function theme_remove_action_head() {
  */
 function theme_scripts() {
 	$version = time();
+	$media = 'screen and (max-width: 750px)';
 
 	wp_deregister_script( 'jquery' );
 	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', array(), $version );
@@ -108,7 +109,7 @@ function theme_scripts() {
 	wp_enqueue_style( 'theme-style',      get_stylesheet_uri(), array(), $version );
 	wp_enqueue_style( 'theme-reset',      get_template_directory_uri() . '/css/reset.css',      array( 'theme-style' ), $version );
 	wp_enqueue_style( 'theme-base',       get_template_directory_uri() . '/css/base.css',       array( 'theme-reset' ), $version );
-	wp_enqueue_style( 'theme-responsive', get_template_directory_uri() . '/css/responsive.css', array( 'theme-base' ),  $version );
+	wp_enqueue_style( 'theme-responsive', get_template_directory_uri() . '/css/responsive.css', array( 'theme-base' ),  $version, $media );
 	wp_enqueue_style( 'theme-default',    get_template_directory_uri() . '/css/default.css',    array( 'theme-responsive' ),  $version );
 	wp_enqueue_style( 'fontawesome',      get_template_directory_uri() . '/css/fontawesome/css/font-awesome.min.css', array(), $version );
 
@@ -150,3 +151,40 @@ function stop_rich_editor( $editor ) {
 	return $editor;
 }
 add_filter( 'user_can_richedit', 'stop_rich_editor' );
+
+/**
+ * Widget Area Register
+ *
+ * @since 1.0.0
+ * @link  https://developer.wordpress.org/reference/functions/register_sidebar/
+ */
+function theme_widgets_init() {
+	register_sidebar( array(
+		'name'          => 'Sidebar',
+		'id'            => 'sidebar-1',
+		'description'   => 'Add widgets here to appear in your sidebar.',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>'
+	) );
+}
+add_action( 'widgets_init', 'theme_widgets_init' );
+
+/**
+ * Remove title category: tag: archive:
+ *
+ * @param  string $title
+ * @return string $title
+ */
+function remove_pre_title_word( $title ) {
+	if ( is_category() ) {
+		$title = single_cat_title( '', false );
+	} elseif ( is_tag() ) {
+		$title = single_tag_title( '', false );
+	} elseif ( is_post_type_archive() ){
+		$title = post_type_archive_title( '', false );
+	}
+	return $title;
+}
+add_filter( 'get_the_archive_title', 'remove_pre_title_word' );

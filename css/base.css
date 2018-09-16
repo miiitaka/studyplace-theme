@@ -634,18 +634,18 @@ footer {
 	margin-bottom: 60px;
 }
 
-.footer__contents-menu {
+.footer__contents-menu-wrap ul {
 	display: inline-flex;
 	justify-content: space-between;
 	list-style: none;
 	padding-left: 0;
 }
 
-.footer__contents-menu a {
+.footer__contents-menu-wrap a {
 	color: #fff;
 }
 
-.footer__contents-menu li:not(:last-child)::after {
+.footer__contents-menu-wrap li:not(:last-child)::after {
 	content: "/";
 	color: #fff;
 	margin: 0 10px;
@@ -1477,12 +1477,17 @@ label.required::after {
 }
 
 .l-contents__contribution {
+	background-size: cover;
+	position: relative;
+	min-height: 768px;
 	min-width: 1200px;
 }
 
 .contents__contribution {
+	bottom: 0;
+	left: calc(50% - 550px);
 	margin: 0 auto;
-	padding-top: 450px;
+	position: absolute;
 	width: 1100px;
 }
 
@@ -1540,13 +1545,51 @@ label.required::after {
 }
 
 .l-contents__contribution-detail {
-	min-width: 1200px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 80px 50px;
 }
 
 .contents__contribution-detail {
-	margin: 0 auto;
-	padding-top: 100px;
-	width: 1100px;
+	font-size: 14px;
+	width: 800px;
+}
+
+.contents__contribution-detail h2 {
+	border-top: solid 1px #999;
+	font-size: 18px;
+	margin: 40px 0;
+	padding: 20px 0;
+	position: relative;
+}
+
+.contents__contribution-detail h3 {
+	font-size: 16px;
+	margin: 30px 0;
+	padding: 20px 0;
+	position: relative;
+}
+
+.contents__contribution-detail h2::after,
+.contents__contribution-detail h3::after {
+	border-bottom: solid 2px #00a0e9;
+	bottom: 0;
+	content: " ";
+	display: block;
+	left: 0;
+	position: absolute;
+	width: 50px;
+}
+
+.contents__contribution-detail img {
+	max-width: 100%;
+}
+
+.contents__contribution-sidebar {
+	width: 230px;
 }
 
 .l-contents__archive,
@@ -1603,19 +1646,19 @@ label.required::after {
 	padding-left: 0;
 }
 
-.contents__archive-list-datail {
+.contents__archive-list-detail {
 	background-color: #f5f4f3;
 	height: 270px;
 	margin-bottom: 20px;
 	width: 540px;
 }
 
-.contents__archive-list-datail:hover {
+.contents__archive-list-detail:hover {
 	background-color: #00a0e9;
 	color: #fff;
 }
 
-.contents__archive-list-datail article {
+.contents__archive-list-detail article {
 	display: flex;
 	justify-content: space-between;
 }
@@ -1627,8 +1670,8 @@ label.required::after {
 }
 
 .contents__archive-list-text time,
-.contents__archive-list-datail-category,
-.contents__archive-list-datail-author {
+.contents__archive-list-detail-category,
+.contents__archive-list-detail-author {
 	color: #999;
 	font-size: 13px;
 }
@@ -1647,29 +1690,52 @@ label.required::after {
 	font-size: 18px;
 }
 
-.contents__archive-list-datail:hover time,
-.contents__archive-list-datail:hover h3 a,
-.contents__archive-list-datail:hover .contents__archive-list-datail-category,
-.contents__archive-list-datail:hover .contents__archive-list-datail-author,
-.contents__archive-list-datail:hover .post-categories a,
-.contents__archive-list-datail:hover span {
+.contents__archive-list-detail:hover time,
+.contents__archive-list-detail:hover h3 a,
+.contents__archive-list-detail:hover .contents__archive-list-detail-category,
+.contents__archive-list-detail:hover .contents__archive-list-detail-author,
+.contents__archive-list-detail:hover .post-categories a,
+.contents__archive-list-detail:hover span {
 	color: #fff;
 }
 
-.contents__archive-list-datail-category,
-.contents__archive-list-datail-author {
+.contents__archive-list-detail-category,
+.contents__archive-list-detail-author {
 	display: flex;
 	justify-content: flex-start;
 }
 
-.contents__archive-list-datail-category .post-categories,
-.contents__archive-list-datail-author span {
+.contents__archive-list-detail-category .post-categories,
+.contents__archive-list-detail-author span {
 	color: #00a0e9;
 	margin-left: 8px;
 }
 
 .contents__archive-list article figure {
+	display: flex;
+	justify-content: center;
 	height: 270px;
+	overflow: hidden;
 	order: 2;
 	width: 270px;
+}
+
+.contents__archive-list article figure img {
+	height: 270px;
+	width: auto;
+}
+
+.youtube {
+	height: 0;
+	margin: 20px 0;
+	padding-top: 75%;
+	position: relative;
+	width: 100%;
+}
+.youtube iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
