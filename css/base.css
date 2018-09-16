@@ -1477,12 +1477,17 @@ label.required::after {
 }
 
 .l-contents__contribution {
+	background-size: cover;
+	position: relative;
+	min-height: 768px;
 	min-width: 1200px;
 }
 
 .contents__contribution {
+	bottom: 0;
+	left: calc(50% - 550px);
 	margin: 0 auto;
-	padding-top: 450px;
+	position: absolute;
 	width: 1100px;
 }
 
@@ -1543,8 +1548,9 @@ label.required::after {
 	box-sizing: border-box;
 	display: flex;
 	justify-content: space-between;
-	min-width: 1200px;
-	padding: 0 50px;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 80px 50px;
 }
 
 .contents__contribution-detail {
