@@ -153,7 +153,7 @@ a {
 }
 
 .l-home__top {
-	background: url("../img/bg_home_top_img.png") no-repeat center top;
+	background: url("../img/studyplace-top-view.jpg") no-repeat center top;
 	background-size: cover;
 	min-height: 768px;
 	min-width: 1200px;
@@ -1476,6 +1476,7 @@ label.required::after {
 }
 
 .l-contents__contribution {
+	background-position: center;
 	background-size: cover;
 	position: relative;
 	min-height: 768px;
@@ -1557,10 +1558,14 @@ label.required::after {
 	width: 800px;
 }
 
+.contents__contribution-detail section {
+	margin: 0 0 40px ;
+}
+
 .contents__contribution-detail h2 {
 	border-top: solid 1px #999;
 	font-size: 18px;
-	margin: 40px 0;
+	margin: 0 0 40px ;
 	padding: 20px 0;
 	position: relative;
 }
@@ -1720,6 +1725,7 @@ label.required::after {
 }
 
 .contents__archive-list article figure img {
+	display: block;
 	height: 270px;
 	width: auto;
 }
