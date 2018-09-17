@@ -417,12 +417,6 @@ footer,
 	font-size: 14px;
 }
 
-.footer__contents-menu-wrap li:nth-child(2)::after,
-.footer__contents-menu-wrap li:nth-child(5)::after {
-	content: "";
-	margin: 0;
-}
-
 .l-footer__contents small {
 	font-size: 12px;
 }
@@ -845,7 +839,7 @@ footer,
 }
 
 .l-contents__contribution {
-	min-height: 300px;
+	min-height: 400px;
 	min-width: auto;
 }
 
@@ -892,6 +886,10 @@ footer,
 
 .contents__contribution-title::after {
 	bottom: 15px;
+}
+
+.contents__contribution-link {
+	display: inline-block;
 }
 
 .contents__contribution-sidebar {
