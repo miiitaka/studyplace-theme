@@ -28,9 +28,9 @@
 					</p>
 				</div>
 
-				<nav class="button__next">
-					<a href="">私たちが目指すもの</a>
-				</nav>
+<!--				<nav class="button__next">-->
+<!--					<a href="">私たちが目指すもの</a>-->
+<!--				</nav>-->
 			</div>
 		</section>
 
@@ -113,20 +113,20 @@
 					COMPANY SPIRITS
 				</h2>
 				<div class="home__concept-detail">
-					<h3 class="">MISSION - 情熱を傾け、目指すもの</h3>
+					<h3>MISSION - 情熱を傾け、目指すもの</h3>
 					<p>“いつ使うかわからない技術”よりも<br class="home__concept-detail-br">“今すぐ使える技術”を</p>
 				</div>
 				<div class="home__concept-detail">
-					<h3 class="">VISION - 私たちの行動方針</h3>
+					<h3>VISION - 私たちの行動方針</h3>
 					<p>
 						未来を生きる若者たちのために<br class="home__concept-detail-br">10年先の技術・能力を予見する<br>
 						究極のIT教育ベンチャーであり続ける
 					</p>
 				</div>
 
-				<nav class="button__next">
-					<a href="<?php echo esc_url( home_url( '/concept/' ) ) ?>">理念について</a>
-				</nav>
+<!--				<nav class="button__next">-->
+<!--					<a href="--><?php //echo esc_url( home_url( '/concept/' ) ) ?><!--">理念について</a>-->
+<!--				</nav>-->
 			</div>
 		</section>
 
@@ -139,14 +139,14 @@
 			</div>
 			<div class="home__news-detail-wrap">
 				<ul class="home__news-list">
-					<?php
+				<?php
 					$args = array(
 						'posts_per_page' => 4,
 						'category'       => -10
 					);
 					$myposts = get_posts( $args );
 					foreach ( $myposts as $post ) : setup_postdata( $post );
-					?>
+				?>
 					<li class="home__news-list-detail">
 						<article>
 							<div class="home__news-post-time">
@@ -158,10 +158,10 @@
 							<?php echo get_the_category_list(); ?>
 						</article>
 					</li>
-					<?php
+				<?php
 					endforeach;
 					wp_reset_postdata();
-					?>
+				?>
 				</ul>
 			</div>
 			<div class="home__news-article_wrap">
@@ -176,14 +176,14 @@
 					メディア掲載実績
 				</h2>
 				<ul id="media_slider" class="home__media-list">
-					<?php
+				<?php
 					$args = array(
 						'posts_per_page' => 10,
-						'category' => 10
+						'category'       => 10
 					);
 					$myposts = get_posts( $args );
 					foreach ( $myposts as $post ) : setup_postdata( $post );
-					?>
+				?>
 					<li class="home__media-list-detail">
 						<figure>
 							<a href="<?php the_permalink(); ?>">
@@ -194,10 +194,10 @@
 							</figcaption>
 						</figure>
 					</li>
-					<?php
+				<?php
 					endforeach;
 					wp_reset_postdata();
-					?>
+				?>
 				</ul>
 			</div>
 		</section>
