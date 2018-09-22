@@ -19,6 +19,7 @@
 				nextText: "",
 				pager: false,
 				prevText: "",
+				slideMargin: 1,
 				slideWidth: 200
 			});
 		}
