@@ -4,7 +4,7 @@
 		<section class="l-contents__archive">
 			<div class="contents__archive">
 				<?php
-					the_archive_title( '<h1 class="contents__archive-title">', '</h1>' );
+					the_archive_title( '<h1 class="contents__archive-title"><span>Newspaper column &amp; Report</span>', '</h1>' );
 					the_archive_description( '<div class="contents__archive-description">', '</div>' );
 					?>
 			</div>
@@ -31,7 +31,7 @@
 							</figure>
 						</article>
 					</li>
-					<?php endwhile; ?>
+					<?php endwhile; wp_reset_postdata(); ?>
 				</ul>
 			</div>
 		</section>

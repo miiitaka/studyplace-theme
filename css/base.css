@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Vollkorn');
 
 body {
+	background: url(../img/studyplace-logo-mark.png) no-repeat top right;
 	margin: 0 auto;
 	min-width: 1200px;
 }
@@ -676,8 +677,6 @@ footer {
 }
 
 .contents__policy-title {
-	background-color: rgba(255, 255, 255, 0.8);
-	border-bottom: 1px solid #fff;
 	font-size: 50px;
 	margin:	0 auto;
 	padding: 48px 0;
@@ -1191,8 +1190,6 @@ footer {
 	margin-bottom: 10px;
 }
 .contents__contact-title {
-	background-color: rgba(255, 255, 255, 0.8);
-	border-bottom: 1px solid #fff;
 	font-size: 50px;
 	margin:	0 auto;
 	padding: 48px 0;
@@ -1550,7 +1547,7 @@ label.required::after {
 	justify-content: space-between;
 	margin: 0 auto;
 	max-width: 1200px;
-	padding: 80px 50px;
+	padding: 80px 50px 0;
 }
 
 .contents__contribution-detail {
@@ -1603,7 +1600,7 @@ label.required::after {
 }
 
 .contents__archive {
-	padding-top: 300px;
+	padding-top: 100px;
 }
 
 .contents__archive,
@@ -1613,13 +1610,20 @@ label.required::after {
 }
 
 .contents__archive-title {
-	background-color: rgba(255, 255, 255, 0.8);
-	border-bottom: 1px solid #fff;
 	font-size: 50px;
 	margin:	0 auto;
 	padding: 48px 0;
 	position: relative;
 	text-align: left;
+}
+
+.contents__archive-title span {
+	color: #00a0e9;
+	display: block;
+	font-family: "Vollkorn";
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 10px;
 }
 
 .contents__archive-title::after {
@@ -1634,7 +1638,6 @@ label.required::after {
 .contents__archive-description {
 	border-bottom: 1px solid #ccc;
 	font-size: 13px;
-	font-weight: normal;
 	padding-bottom: 30px;
 }
 
@@ -1649,6 +1652,22 @@ label.required::after {
 	justify-content: space-between;
 	list-style: none;
 	padding-left: 0;
+}
+
+.contents__archive-list-title {
+	border-top: solid 1px #ccc;
+	font-size: 30px;
+	padding: 30px 0;
+	text-align: center;
+}
+
+.contents__archive-list-title span {
+	color: #00a0e9;
+	display: block;
+	font-family: "Vollkorn";
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 10px;
 }
 
 .contents__archive-list-detail {
