@@ -28,9 +28,9 @@
 					</p>
 				</div>
 
-<!--				<nav class="button__next">-->
+				<nav class="button__next">
 <!--					<a href="">私たちが目指すもの</a>-->
-<!--				</nav>-->
+				</nav>
 			</div>
 		</section>
 
@@ -124,9 +124,9 @@
 					</p>
 				</div>
 
-<!--				<nav class="button__next">-->
+				<nav class="button__next">
 <!--					<a href="--><?php //echo esc_url( home_url( '/concept/' ) ) ?><!--">理念について</a>-->
-<!--				</nav>-->
+				</nav>
 			</div>
 		</section>
 
