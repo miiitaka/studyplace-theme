@@ -1024,13 +1024,6 @@ footer {
 	padding: 10px;
 }
 
-.contents__about-access-link a::after {
-	font-family: "fontawesome";
-	content: "\f35d";
-	padding-left: 30px;
-	position: absolute;
-}
-
 .l-contents__concept {
 	background: url("../img/bg_concept_img.png") no-repeat center top;
 	background-size: cover;
