@@ -874,6 +874,10 @@ footer,
 	font-size: 13px;
 }
 
+.contents__contribution-detail-contact br {
+	display: inline;
+}
+
 .contents__contribution-date {
 	font-size: 13px;
 	margin-bottom: 10px;
