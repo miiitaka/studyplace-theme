@@ -1600,6 +1600,19 @@ label.required::after {
 	max-width: 100%;
 }
 
+.contents__contribution-detail-contact {
+	background: #f5f5f5;
+	padding: 20px 40px 40px;
+}
+
+.contents__contribution-detail-contact h2 {
+	border-top: none;
+}
+
+.contents__contribution-detail-contact br {
+	display: none;
+}
+
 .contents__contribution-sidebar {
 	width: 230px;
 }
