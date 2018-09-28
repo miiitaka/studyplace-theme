@@ -118,9 +118,9 @@ function theme_scripts() {
 	wp_enqueue_script( 'hamburger.jsfile', get_template_directory_uri() . '/js/hamburger.js', array( 'jquery' ), $version );
 
 	if ( is_home() ) {
-		wp_enqueue_style( 'bxslider-style',    get_template_directory_uri() . '/css/bxslider/jquery.bxslider.css', array( 'theme-reset' ), $version );
-		wp_enqueue_script( 'jquery.bxslider',  get_template_directory_uri() . '/js/jquery.bxslider.js', array( 'jquery' ), $version );
-		wp_enqueue_script( 'bxslider.jsfile',  get_template_directory_uri() . '/js/bxslider.js',        array( 'jquery.bxslider' ), $version );
+		wp_enqueue_style( 'bxslider-style',   get_template_directory_uri() . '/css/bxslider/jquery.bxslider.css', array( 'theme-reset' ), $version );
+		wp_enqueue_script( 'jquery.bxslider', get_template_directory_uri() . '/js/jquery.bxslider.js', array( 'jquery' ), $version );
+		wp_enqueue_script( 'bxslider.jsfile', get_template_directory_uri() . '/js/bxslider.js',        array( 'jquery.bxslider' ), $version );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
@@ -188,3 +188,20 @@ function remove_pre_title_word( $title ) {
 	return $title;
 }
 add_filter( 'get_the_archive_title', 'remove_pre_title_word' );
+
+/**
+ * Google Tag Manager(AMP).
+ */
+function tag_manager_script () {
+	if ( !is_user_logged_in() ) {
+		echo '<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>';
+	}
+}
+add_action( 'amp_post_template_head', 'tag_manager_script' );
+
+function tag_manager_analytics () {
+	if ( !is_user_logged_in() ) {
+		echo '<amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-WXXQPRB&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>';
+	}
+}
+add_action( 'amp_post_template_footer', 'tag_manager_analytics' );
