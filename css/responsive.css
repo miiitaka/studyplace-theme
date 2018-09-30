@@ -33,7 +33,6 @@ body {
 
 .header .global_nav {
 	justify-content: flex-end;
-	margin-top: 6px;
 	width: 120px;
 }
 
@@ -370,10 +369,6 @@ footer,
 
 .home__media .bx-wrapper .bx-pager.bx-default-pager {
 	width: 100%;
-}
-
-.home__media-list-detail img {
-	width: 90%;
 }
 
 .footer__pagetop {

@@ -10,6 +10,7 @@
 				nextText: "",
 				pager: false,
 				prevText: "",
+				slideMargin: 1,
 				slideWidth: windowSize / 2 - 20
 			});
 		} else {

@@ -37,6 +37,7 @@ a {
 }
 
 .header {
+	align-items: center;
 	display: flex;
 	justify-content: space-between;
 	margin: 30px auto 0;
@@ -603,10 +604,12 @@ a {
 	margin-bottom: 20px;
 }
 
-.home__media-list-detail a {
+.home__media-list-detail figcaption a {
 	color: #000;
 	display: block;
 	font-size: 13px;
+	padding: 0 5px;
+	text-align: left;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager {
@@ -1515,6 +1518,7 @@ label.required::after {
 .contents__contribution-title {
 	color: #fff;
 	font-size: 30px;
+	line-height: 1.5;
 	margin:	0 auto;
 	padding: 0 0 48px;
 	position: relative;
@@ -1536,6 +1540,7 @@ label.required::after {
 	flex-wrap: wrap;
 	font-size: 13px;
 	justify-content: flex-start;
+	line-height: 1.5;
 	margin-bottom: 30px;
 	text-shadow: 1px 1px 1px #333;
 }
@@ -1566,6 +1571,7 @@ label.required::after {
 
 .contents__contribution-detail {
 	font-size: 14px;
+	line-height: 1.5;
 	width: 800px;
 }
 
@@ -1665,6 +1671,7 @@ label.required::after {
 .contents__archive-description {
 	border-bottom: 1px solid #ccc;
 	font-size: 13px;
+	line-height: 1.5;
 	padding-bottom: 30px;
 }
 
@@ -1726,6 +1733,7 @@ label.required::after {
 .contents__archive-list-detail-author {
 	color: #999;
 	font-size: 13px;
+	line-height: 1.5;
 }
 
 .contents__archive-list-text time {
@@ -1778,6 +1786,16 @@ label.required::after {
 	width: auto;
 }
 
+.l-404 {
+	padding: 150px 0 50px;
+	text-align: center;
+}
+
+.l-404 h2 {
+	padding: 0 10px;
+	text-align: center;
+}
+
 .youtube {
 	height: 0;
 	margin: 20px 0;
@@ -1791,4 +1809,14 @@ label.required::after {
 	position: absolute;
 	top: 0;
 	width: 100%;
+}
+
+.widget_posted_display_widget li img {
+	width: 100%;
+}
+
+.widget_posted_display_widget li span {
+	display: block;
+	font-size: 12px;
+	line-height: 1.5;
 }
