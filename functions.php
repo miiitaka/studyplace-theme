@@ -100,7 +100,8 @@ function theme_remove_action_head() {
  * @since 1.0.0
  */
 function theme_scripts() {
-	$version = time();
+	//$version = time();
+	$version = '1.0.0';
 	$media = 'screen and (max-width: 750px)';
 
 	wp_deregister_script( 'jquery' );
