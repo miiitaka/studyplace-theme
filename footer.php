@@ -7,7 +7,9 @@
 		</div>
 		<div class="l-footer__contents">
 			<figure>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/footer-logo.png" width="185" height="101" alt="">
+				<a href="<?php echo esc_url( home_url( '/' ) ) ?>">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/footer-logo.png" width="185" height="101" alt="スタディプレイス.meのロゴ">
+				</a>
 			</figure>
 			<div class="footer__contents-menu-wrap">
 				<?php
