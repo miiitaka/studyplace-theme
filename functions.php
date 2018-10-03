@@ -206,3 +206,29 @@ function tag_manager_analytics () {
 	}
 }
 add_action( 'amp_post_template_footer', 'tag_manager_analytics' );
+
+/**
+ * Login page customize.
+ *
+ * @since 1.0.0
+ */
+function theme_login_style() { ?>
+	<style>
+		body.login div#login h1 a {
+			background-image: url("https://www.studyplace.me/wp-content/uploads/2018/09/logo2.png");
+			background-size: contain;
+			height: 60px;
+			width: 100%;
+		}
+		body.login div#login form#loginform p.submit input#wp-submit {
+			background: #004c8c;
+			border-color: #004c8c;
+			box-shadow: 0 1px 0 #004c8c;
+			text-shadow: none;
+		}
+		#backtoblog {
+			display: none;
+		}
+	</style>
+<?php }
+add_action( 'login_enqueue_scripts', 'theme_login_style' );
